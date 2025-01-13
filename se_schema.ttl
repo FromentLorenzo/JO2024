@@ -4,24 +4,41 @@
 @prefix se: <http://example.org/olympics2024/schema#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 
 
 #Classes 
 
-se:Athlete a rdfs:Class ;
+se:Athlete a owl:Class ;
     rdfs:label "Athlete";
-    rdfs:comment "Un athlète est un participant à une epreuve." .
+    rdfs:comment "Un athlète est un participant à une epreuve.";
+    rdfs:subClassOf[
+        a owl:Restriction;;
+        owl:onProperty se:representsCountry;
+        owl:maxCardinality 1;
+    ];
+    # Un athlète participe à au moins une épreuve.
+    rdfs:subClassOf[
+        a owl:Restriction;
+        owl:onProperty se:epreuve;
+        owl:someValuesFrom se:Epreuve;
+    ].
 
-se:Team a rdfs:Class;
+se:Team a owl:Class;
     rdfs:label "Team";
-    rdfs:comment "Une équipe est un groupe d'athlètes qui participe à une epreuve." .
+    rdfs:comment "Une équipe est un groupe d'athlètes qui participe à une epreuve." ;
+    rdfs:subClassOf[
+        a owl:Restriction;
+        owl:onProperty se:representsCountry;
+        owl:minCardinality 2;
+    ].
 
-se:Sport a rdfs:Class ;
+se:Sport a owl:Class ;
     rdfs:label "Sport";
     rdfs:comment "Un sport est une catégorie ou un domaine général qui regroupe un ensemble d'épreuves." .
 
-se:epreuve a rdfs:Class ;
+se:Epreuve a rdfs:Class ;
     rdfs:label "epreuve";
     rdfs:comment "Une épreuve est une compétition spécifique au sein d'une epreuve sportive." .
 
@@ -41,6 +58,10 @@ se:Country a rdfs:Class ;
     rdfs:label "Country" ;
     rdfs:comment "Un pays est une nation représentée dans les Jeux Olympiques." .
 
+se:Athlete owl:disjointWith se:Team .
+se:Athlete owl:disjointWith se:Venue .
+se:Team owl:disjointWith se:Venue .
+
 # Properties
 
 se:athlete a rdf:Property ;
@@ -52,14 +73,14 @@ se:athlete a rdf:Property ;
 
 se:epreuve a rdf:Property ;
     rdfs:label "epreuve" ;
-    rdfs:comment "La epreuve qui regroupe une épreuve." ;
+    rdfs:comment "L'épreuve à laquelle un athlète participe." ;
     rdfs:domain se:Sport ;
-    rdfs:range se:epreuve .
+    rdfs:range se:Epreuve .
 
 se:venue a rdf:Property ;
     rdfs:label "venue" ;
     rdfs:comment "Le lieu où se déroule une épreuve." ;
-    rdfs:domain se:epreuve ;
+    rdfs:domain se:Epreuve ;
     rdfs:range se:Venue .
 
 se:results a rdf:Property ;
@@ -68,10 +89,10 @@ se:results a rdf:Property ;
     rdfs:domain se:Ressource ;
     rdfs:range se:Result .
 
-se:team a rdf:Property;
+se:team a owl:IrreflexiveProperty ;
     rdfs:label "team" ;
     rdfs:comment "L'équipe qui participe à une epreuve." ;
-    rdfs:domain se:epreuve ;
+    rdfs:domain se:Epreuve ;
     rdfs:range se:Team .
 
 se:name a rdf:Property ;
@@ -112,7 +133,7 @@ se:recordDate a rdf:Property ;
     rdfs:domain se:WorldRecord ;
     rdfs:range xsd:date .
 
-se:recordHolder a rdf:Property ;
+se:recordHolder a owl:InverseFunctionalProperty  ;
     rdfs:label "recordHolder" ;
     rdfs:comment "L'athlète qui détient le record du monde." ;
     rdfs:domain se:WorldRecord ;
@@ -121,16 +142,21 @@ se:recordHolder a rdf:Property ;
 se:worldRecord a rdf:Property ;
     rdfs:label "worldRecord" ;
     rdfs:comment "Le record du monde établi dans une epreuve." ;
-    rdfs:domain se:epreuve ;
+    rdfs:domain se:Epreuve ;
     rdfs:range se:WorldRecord .
 
-se:representsCountry a rdf:Property ;
+se:representsCountry a owl:ObjectProperty ;
     rdfs:label "representsCountry" ;
     rdfs:comment "Le pays représenté par un athlète ou une équipe." ;
     rdfs:domain se:Athlete, se:Team ;
-    rdfs:range se:Country .
+    rdfs:range se:County.
 
-se:birthDate a rdf:Property ;
+se:isRepresentedBy a owl:ObjectProperty ;
+    rdfs:label "isRepresentedBy" ;
+    rdfs:domain se:Country ;
+    rdfs:range se:Athlete, se:Team .
+
+se:birthDate a owl:FunctionalProperty  ;
     rdfs:label "birthDate" ;
     rdfs:comment "La date de naissance d'un athlète." ;
     rdfs:domain se:Athlete ;
@@ -145,25 +171,25 @@ se:sexe a rdf:Property ;
 se:epreuveName a rdf:Property ;
     rdfs:label "epreuveName" ;
     rdfs:comment "Le nom d'une epreuve." ;
-    rdfs:domain se:epreuve ;
+    rdfs:domain se:Epreuve ;
     rdfs:range xsd:string .
 
 se:dateEvent a rdf:Property;
     rdfs:label "dateEvent" ;
     rdfs:comment "La date à laquelle une épreuve a lieu." ;
-    rdfs:domain se:epreuve ;
+    rdfs:domain se:Epreuve ;
     rdfs:range xsd:date .
 
 se:ticketAvailable a rdf:Property ;
     rdfs:label "ticketAvailable" ;
     rdfs:comment "Le nombre de billets disponibles pour une épreuve." ;
-    rdfs:domain se:epreuve ;
+    rdfs:domain se:Epreuve ;
     rdfs:range xsd:boolean .
 
 se:competitionStage a rdf:Property ;
     rdfs:label "competitionStage" ;
     rdfs:comment "Le stade de la compétition, comme les qualifications ou les finales." ;
-    rdfs:domain se:epreuve ;
+    rdfs:domain se:Epreuve ;
     rdfs:range xsd:string .
 
 # Classe pour représenter un podium
@@ -189,3 +215,7 @@ se:thirdPlace a rdf:Property ;
     rdfs:comment "L'athlète en troisième position." ;
     rdfs:domain se:Podium ;
     rdfs:range se:Athlete .
+
+se:firstPlace owl:propertyDisjointWith se:secondPlace .
+se:firstPlace owl:propertyDisjointWith se:thirdPlace .
+se:secondPlace owl:propertyDisjointWith se:thirdPlace .

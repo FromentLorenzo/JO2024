@@ -51,35 +51,41 @@ se:Tour_Eiffel a se:Venue ;
 
 se:New_Zealand a se:Country ;
     rdfs:label "New Zealand" ;
-    rdfs:comment "New Zealand is a country in the southwestern Pacific Ocean." .
+    rdfs:comment "New Zealand is a country in the southwestern Pacific Ocean.".
 
 se:United_States a se:Country ;
     rdfs:label "United States" ;
-    rdfs:comment "The United States of America is a country in North America." .
+    rdfs:comment "The United States of America is a country in North America." ;
+    se:isRepresentedBy se:basketball_Team_USA_final.
 
 se:Sweden a se:Country ;
     rdfs:label "Sweden" ;
-    rdfs:comment "Sweden is a country in Northern Europe." .
+    rdfs:comment "Sweden is a country in Northern Europe." ;
+    se:isRepresentedBy se:beach_volley_Team_Sweden_final.
 
 se:Qatar a se:Country ;
     rdfs:label "Qatar" ;
-    rdfs:comment "Qatar is a country in the Middle East." .
+    rdfs:comment "Qatar is a country in the Middle East.".
 
 se:France a se:Country ;
     rdfs:label "France" ;
-    rdfs:comment "France is a country in Western Europe." .
+    rdfs:comment "France is a country in Western Europe.";
+    se:isRepresentedBy se:basketball_Team_France_final, se:Zeze_Ryan.
 
 se:Japan a se:Country ;
     rdfs:label "Japan" ;
-    rdfs:comment "Japan is a country in East Asia." .
+    rdfs:comment "Japan is a country in East Asia.";
+    se:isRepresentedBy se:KITAGUCHI_Haruka.
 
 se:China a se:Country ;
     rdfs:label "China" ;
-    rdfs:comment "China is a country in East Asia." .
+    rdfs:comment "China is a country in East Asia.";
+    se:isRepresentedBy se:Quan_Hongchan, se:Chen_Yuxi, se:Zhanle_Pan.
 
 se:Australia a se:Country ;
     rdfs:label "Australia" ;
-    rdfs:comment "Australia is a country in Oceania." .
+    rdfs:comment "Australia is a country in Oceania." ;
+    se:isRepresentedBy se:Kyle_Chalmers, se:Law_Calab.
 
 se:Brazil a se:Country ; 
     rdfs:label "Brazil" ;
@@ -87,31 +93,38 @@ se:Brazil a se:Country ;
 
 se:Germany a se:Country ;
     rdfs:label "Germany" ;
-    rdfs:comment "Germany is a country in Central Europe." .
+    rdfs:comment "Germany is a country in Central Europe.";
+    se:isRepresentedBy se:beach_volley_Team_Germany_final.
 
 se:Italy a se:Country ;
     rdfs:label "Italy" ;
-    rdfs:comment "Italy is a country in Southern Europe." .
+    rdfs:comment "Italy is a country in Southern Europe.";
+    se:isRepresentedBy se:Desalu_Eseosa_Fostine.
 
 se:Russia a se:Country ; 
     rdfs:label "Russia" ;
     rdfs:comment "Russia is a country in Eastern Europe." .
 
+
 se:South_Africa a se:Country ;
     rdfs:label "South Africa" ;
-    rdfs:comment "South Africa is a country in Southern Africa." .
+    rdfs:comment "South Africa is a country in Southern Africa." ;
+    se:isRepresentedBy se:van_DYK_Jo_Ane, se:van_Niekerk_Wayde.
 
 se:Suisse a se:Country ;
     rdfs:label "Suisse" ;
-    rdfs:comment "La Suisse est un pays d'Europe centrale." .
+    rdfs:comment "La Suisse est un pays d'Europe centrale." ;
+    se:isRepresentedBy se:Svensson_Felix.
 
 se:Poland a se:Country ;
     rdfs:label "Poland" ;
-    rdfs:comment "Poland is a country in Central Europe." .
+    rdfs:comment "Poland is a country in Central Europe." ;
+    se:isRepresentedBy se:Komanski_Albert.
 
 se:Cote_d_Ivoire a se:Country ;
     rdfs:label "Cote d'Ivoire" ;
-    rdfs:comment "Cote d'Ivoire is a country in West Africa." .
+    rdfs:comment "Cote d'Ivoire is a country in West Africa." ;
+    se:isRepresentedBy se:Traore_Cheickna.
 
 se:South_Korea a se:Country ;
     rdfs:label "South Korea" ;
@@ -123,39 +136,47 @@ se:Spain a se:Country ;
 
 se:Romania a se:Country ;
     rdfs:label "Romania" ;
-    rdfs:comment "Romania is a country in Eastern Europe." .
+    rdfs:comment "Romania is a country in Eastern Europe." ;
+    se:isRepresentedBy se:David_Popovici.
 
 se:Tchéquie a se:Country ;
     rdfs:label "Tchéquie" ;
-    rdfs:comment "La Tchéquie est un pays d'Europe centrale." .
+    rdfs:comment "La Tchéquie est un pays d'Europe centrale." ;
+    se:isRepresentedBy se:seRODNIKOVA_Nikola.
 
 se:République_Populaire_Démocratique_de_Corée a se:Country ;
     rdfs:label "République Populaire Démocratique de Corée" ;
-    rdfs:comment "La République Populaire Démocratique de Corée est un pays d'Asie de l'Est." .
+    rdfs:comment "La République Populaire Démocratique de Corée est un pays d'Asie de l'Est." ;
+    se:isRepresentedBy se:Kim_Mi_Rae.
 
 se:Serbie a se:Country ;
     rdfs:label "Serbie" ;
-    rdfs:comment "La Serbie est un pays d'Europe du Sud-Est." .
+    rdfs:comment "La Serbie est un pays d'Europe du Sud-Est.".
 
 se:Liberia a se:Country ;
     rdfs:label "Liberia" ;
-    rdfs:comment "Le Liberia est un pays d'Afrique de l'Ouest." .
+    rdfs:comment "Le Liberia est un pays d'Afrique de l'Ouest.";
+    se:isRepresentedBy se:Fahnbulleh_Joseph.
 
 se:Jamaica a se:Country ;
     rdfs:label "Jamaica" ;
-    rdfs:comment "Jamaica is an island country in the Caribbean Sea." .
+    rdfs:comment "Jamaica is an island country in the Caribbean Sea." ;
+    se:isRepresentedBy se:Usain_Bolt.
 
 se:Kenya a se:Country ;
     rdfs:label "Kenya" ;
-    rdfs:comment "Kenya is a country in East Africa." .
+    rdfs:comment "Kenya is a country in East Africa." ;
+    se:isRepresentedBy se:Emmanuel_Wanyonyi, se:David_Rudisha.
 
 se:Canada a se:Country ;
     rdfs:label "Canada" ;
-    rdfs:comment "Canada is a country in North America." .
+    rdfs:comment "Canada is a country in North America." ;
+    se:isRepresentedBy se:Marco_Arop.
 
 se:Algeria a se:Country ;
     rdfs:label "Algeria" ;
-    rdfs:comment "Algeria is a country in North Africa." .
+    rdfs:comment "Algeria is a country in North Africa." ;
+    se:isRepresentedBy se:Jamel_Sedjati.
 
 
 # Athletes
@@ -907,7 +928,7 @@ se:Record_800m a se:WorldRecord ;
 # Epreuves
 
 
-se:100m_Nage_Libre a se:epreuve ;
+se:100m_Nage_Libre a se:Epreuve ;
     se:epreuveName "100m nage libre" ;
     rdfs:comment "Le 100m nage libre est une épreuve de natation qui consiste à nager sur une distance de 100 mètres." ;
     se:venue se:Defense_Arena ;
@@ -917,7 +938,7 @@ se:100m_Nage_Libre a se:epreuve ;
     se:competitionStage "Final" ;
     se:results se:Result_Zhanle_Pan_100m_Nage_Libre_Final, se:Result_Kyle_Chalmers_100m_Nage_Libre_Final, se:Result_David_Popovici_100m_Nage_Libre_Final .
 
-se:Lancer_de_javelot a se:epreuve ;
+se:Lancer_de_javelot a se:Epreuve ;
     se:epreuveName "Lancer de javelot" ;
     rdfs:comment "Le lancer de javelot est une épreuve d'athlétisme qui consiste à lancer un javelot le plus loin possible." ;
     se:venue se:Stade_de_France ;
@@ -927,7 +948,7 @@ se:Lancer_de_javelot a se:epreuve ;
     se:competitionStage "Final" ;
     se:results se:Result_KITAGUCHI_Haruka_Javelot_Final, se:Result_van_DYK_Jo_Ane_Javelot_Final, se:Result_seRODNIKOVA_Nikola_Javelot_Final .
 
-se:Plongeon_10m a se:epreuve ;
+se:Plongeon_10m a se:Epreuve ;
     se:epreuveName "Plongeon 10m" ;
     rdfs:comment "Le plongeon 10m est une épreuve de plongeon qui consiste à sauter d'un plongeoir de 10 mètres de hauteur." ;
     se:venue se:Centre_aquatique_olympique ;
@@ -937,7 +958,7 @@ se:Plongeon_10m a se:epreuve ;
     se:competitionStage "Final" ;
     se:results se:Result_Quan_Hongchan_plongeon_10m_final, se:Result_Chen_Yuxi_plongeon_10m_final, se:Result_Kim_Mi_Rae_plongeon_10m_final .
 
-se:Basketball a se:epreuve ;
+se:Basketball a se:Epreuve ;
     se:epreuveName "Basketball" ;
     rdfs:comment "Le basketball est un sport collectif qui se joue avec un ballon et un panier." ;
     se:venue se:Stage_Pierre_Mauroy ;
@@ -946,7 +967,7 @@ se:Basketball a se:epreuve ;
     se:competitionStage "Final" ;
     se:team se:basketball_Team_USA_final, se:basketball_Team_France_final.
 
-se:200m a se:epreuve ;
+se:200m a se:Epreuve ;
     se:epreuveName "200m" ;
     rdfs:comment "Le 200m est une épreuve d'athlétisme qui consiste à courir sur une distance de 200 mètres." ;
     se:venue se:Stade_de_France ;
@@ -956,7 +977,7 @@ se:200m a se:epreuve ;
     se:competitionStage "1er Tour" ;
     se:results se:Result_Fahnbulleh_Joseph_200m_1er_Tour, se:Result_Desalu_Eseosa_Fostine_200m_1er_Tour, se:Result_van_Niekerk_Wayde_200m_1er_Tour, se:Result_Zeze_Ryan_200m_1er_Tour, se:Result_Svensson_Felix_200m_1er_Tour, se:Result_Traore_Cheickna_200m_1er_Tour, se:Result_Law_Calab_200m_1er_Tour, se:Result_Komanski_Albert_200m_1er_Tour .
 
-se:800m a se:epreuve ;
+se:800m a se:Epreuve ;
     se:epreuveName "800m" ;
     rdfs:comment "Le 800m est une épreuve d'athlétisme qui consiste à courir sur une distance de 800 mètres." ;
     se:venue se:Stade_de_France ;
@@ -966,7 +987,7 @@ se:800m a se:epreuve ;
     se:competitionStage "Final" ;
     se:results se:Result_Wanyonyi_Emmanuel_800m_Final, se:Result_Arop_Marco_800m_Final, se:Result_Sedjati_Jamel_800m_Final .
 
-se:Beach_Volley a se:epreuve ;
+se:Beach_Volley a se:Epreuve ;
     se:epreuveName "Beach Volley" ;
     rdfs:comment "Le beach volley est un sport collectif qui se joue sur une plage avec un ballon et un filet." ;
     se:venue se:Tour_Eiffel ;
