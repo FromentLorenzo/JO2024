@@ -1,0 +1,265 @@
+1. Recupérer les noms des détenteurs de records du monde
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX se: <http://example.org/olympics2024/schema#>
+
+SELECT ?recordName ?holderName WHERE {
+    ?record a se:WorldRecord;                    
+            rdfs:label ?recordName;            
+            se:recordHolder ?holder.         
+
+    ?holder rdfs:label ?holderName.              
+}
+
+
+2. Les athletes de sexe Féminin
+
+PREFIX se: <http://example.org/olympics2024/schema#>
+
+Select ?athlete where{
+ ?athletes se:sexe "F".
+ ?athletes se:name ?athlete
+}
+
+3. La liste des sports aux jeux olympiques
+
+PREFIX se: <http://example.org/olympics2024/schema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?sport ?label
+WHERE {
+  ?sport a se:Sport ;
+         rdfs:label ?label .
+}
+
+4. Liste des épreuves d'un sport, par exemple "Athlétisme"
+
+PREFIX se: <http://example.org/olympics2024/schema#>
+
+
+SELECT ?epreuve
+WHERE {
+  se:Athletisme se:epreuve ?epreuve .
+}
+
+
+5. La liste des athlètes participant aux jeux olympiques avec le pays qu'ils représentent
+
+PREFIX se: <http://example.org/olympics2024/schema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?name ?paysName
+WHERE {
+  ?athlete a se:Athlete ;
+            se:name ?name;
+	se:representsCountry ?pays.
+ ?pays rdfs:label ?paysName
+}
+
+6. Liste des équipes et de leur epreuve
+
+PREFIX se: <http://example.org/olympics2024/schema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?epreuveName ?teamName
+WHERE {
+ se:Sport_Collectif se:epreuve ?epreuve.
+ ?epreuve se:epreuveName ?epreuveName.
+ ?epreuve se:team ?team.
+ ?team rdfs:label ?teamName.
+           
+}
+
+7. Commentaires descriptif des sports
+
+PREFIX se: <http://example.org/olympics2024/schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX unit: <http://qudt.org/vocab/unit/>
+PREFIX se: <http://example.org/olympics2024/schema#>
+SELECT ?sport ?comment
+WHERE {
+  ?sport a se:Sport ;
+         rdfs:comment ?comment .
+}
+
+8. Nombre de points par équipe
+
+PREFIX se: <http://example.org/olympics2024/schema#>
+PREFIX unit: <http://qudt.org/vocab/unit/>
+
+SELECT ?team (SUM(?points) AS ?total_points)
+WHERE {
+  ?team a se:Team ;
+        se:results ?result .
+  ?result se:athleteOfResult ?athlete ;
+          se:value ?points ;
+          se:unit unit:Point .
+}
+GROUP BY ?team
+
+9. unité utilisé pour une épreuve
+
+PREFIX se: <http://example.org/olympics2024/schema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?sport ?epreuve ?unit
+WHERE {
+  ?sport a se:Sport ;
+         se:epreuve ?epreuve .
+  ?epreuve se:results ?result.
+ ?result se:unit ?unit.
+}
+
+
+10. Changer le lieu d'une epreuve
+
+PREFIX se: <http://example.org/olympics2024/schema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+DELETE {
+  se:Basketball se:venue se:Stage_Pierre_Mauroy .
+}
+INSERT {
+  se:Basketball se:venue se:Stade_de_France .
+}
+WHERE {
+  se:Basketball se:venue ?oldVenue .
+}
+
+
+11. Vérifier si le lieu a bien été changé
+
+PREFIX se: <http://example.org/olympics2024/schema#>
+
+ASK WHERE {
+  se:Basketball se:venue se:Stade_de_France .
+}
+
+12. Médailles des équipes 
+
+PREFIX se: <http://example.org/olympics2024/schema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?countryName 
+       (COUNT(DISTINCT ?goldMedalist) AS ?goldMedalsCount)
+       (COUNT(DISTINCT ?silverMedalist) AS ?silverMedalsCount)
+       (COUNT(DISTINCT ?bronzeMedalist) AS ?bronzeMedalsCount)
+WHERE {
+  
+  {
+    ?podium a se:Podium ;
+            rdfs:label ?podiumLabel ;
+            se:goldMedal ?goldMedalist .
+    ?goldMedalist se:representsCountry ?country .
+ ?country rdfs:label ?countryName.
+  }
+  UNION
+  {
+    ?podium a se:Podium ;
+            rdfs:label ?podiumLabel ;
+            se:silverMedal ?silverMedalist .
+    ?silverMedalist se:representsCountry ?country .
+?country rdfs:label ?countryName.
+  }
+  UNION
+  {
+    ?podium a se:Podium ;
+            rdfs:label ?podiumLabel ;
+            se:bronzeMedal ?bronzeMedalist .
+    ?bronzeMedalist se:representsCountry ?country .
+?country rdfs:label ?countryName.
+  }
+}
+GROUP BY ?country
+
+
+13. Récupérer les 3 meilleurs scores pour l'épreuve "Plongeon 10m"
+
+PREFIX se: <http://example.org/olympics2024/schema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?athlete ?score
+WHERE {
+  ?epreuve a se:epreuve ;
+           se:epreuveName "Plongeon 10m" ;
+           se:results ?result .
+  ?result se:athleteOfResult ?athlete ;
+          se:value ?score .
+}
+ORDER BY DESC(?score)
+LIMIT 3
+
+
+
+14. Ajouter un podium pour l'épreuve "Plongeon 10m" et vérifier si les médaillés ont été ajoutés au podium
+
+PREFIX se: <http://example.org/olympics2024/schema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+INSERT DATA {
+  se:Podium_Plongeon_10m a se:Podium ;
+                          rdfs:label "Podium Plongeon 10m" ;
+                          se:goldMedal se:Quan_Hongchan ;  # Remplacez par le médaillé d'or
+                          se:silverMedal se:Chen_Yuxi ;    # Remplacez par le médaillé d'argent
+                          se:bronzeMedal se:Kim_Mi_Rae .   # Remplacez par le médaillé de bronze
+}
+
+
+
+PREFIX se: <http://example.org/olympics2024/schema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?goldMedalist ?silverMedalist ?bronzeMedalist
+WHERE {
+  se:Podium_Plongeon_10m a se:Podium ;
+                          rdfs:label "Podium Plongeon 10m" ;
+                          se:goldMedal ?goldMedalist ;
+                          se:silverMedal ?silverMedalist ;
+                          se:bronzeMedal ?bronzeMedalist .
+}
+
+
+15. Match et score des épreuves collectives
+
+PREFIX se: <http://example.org/olympics2024/schema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?epreuveNames 
+	?stage
+       (CONCAT(?countryName1, "-", ?countryName2) AS ?match) 
+	
+       (CONCAT(SUM(?points1), " - ", SUM(?points2)) AS ?scoreMatch)
+
+WHERE {
+    se:Sport_Collectif se:epreuve ?epreuve .
+ ?epreuve se:competitionStage ?stage.
+    ?epreuve se:epreuveName ?epreuveNames .
+    ?epreuve se:team ?team1, ?team2 . 
+    ?team1 se:representsCountry ?country1 .
+    ?team2 se:representsCountry ?country2 .
+    ?country1 rdfs:label ?countryName1 . 
+    ?country2 rdfs:label ?countryName2 .  
+    {
+        SELECT ?team1 (SUM(?points1) AS ?points1)
+        WHERE {
+            ?team1 a se:Team ;
+                    se:results ?result1 .
+            ?result1 se:value ?points1 .
+        }
+        GROUP BY ?team1
+    }
+    
+    {
+        SELECT ?team2 (SUM(?points2) AS ?points2)
+        WHERE {
+            ?team2 a se:Team ;
+                    se:results ?result2 .
+            ?result2 se:value ?points2 .
+        }
+        GROUP BY ?team2
+    }
+
+    FILTER(?country1 != ?country2)  
+    FILTER(?countryName1 < ?countryName2)  
+}
+GROUP BY ?epreuveNames ?countryName1 ?countryName2 

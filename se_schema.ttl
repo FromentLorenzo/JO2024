@@ -1,0 +1,191 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix se: <http://example.org/olympics2024/schema#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+
+
+
+#Classes 
+
+se:Athlete a rdfs:Class ;
+    rdfs:label "Athlete";
+    rdfs:comment "Un athlète est un participant à une epreuve." .
+
+se:Team a rdfs:Class;
+    rdfs:label "Team";
+    rdfs:comment "Une équipe est un groupe d'athlètes qui participe à une epreuve." .
+
+se:Sport a rdfs:Class ;
+    rdfs:label "Sport";
+    rdfs:comment "Un sport est une catégorie ou un domaine général qui regroupe un ensemble d'épreuves." .
+
+se:epreuve a rdfs:Class ;
+    rdfs:label "epreuve";
+    rdfs:comment "Une épreuve est une compétition spécifique au sein d'une epreuve sportive." .
+
+se:Venue a rdfs:Class ;
+    rdfs:label "Venue";
+    rdfs:comment "Un lieu est un endroit où se déroule une épreuve." .
+
+se:Result a rdfs:Class ;
+    rdfs:label "Result";
+    rdfs:comment "Un résultat est le score ou le classement d'une épreuve." .  
+
+se:WorldRecord a rdfs:Class ;
+    rdfs:label "WorldRecord" ;
+    rdfs:comment "Un record du monde est la meilleure performance mondiale dans une epreuve." .
+
+se:Country a rdfs:Class ;
+    rdfs:label "Country" ;
+    rdfs:comment "Un pays est une nation représentée dans les Jeux Olympiques." .
+
+# Properties
+
+se:athlete a rdf:Property ;
+    rdfs:label "epreuveathlete" ;
+    rdfs:comment "L'athlète qui participe à une epreuve." ;
+    rdfs:domain se:epreuve ;
+    rdfs:range se:Athlete .
+
+
+se:epreuve a rdf:Property ;
+    rdfs:label "epreuve" ;
+    rdfs:comment "La epreuve qui regroupe une épreuve." ;
+    rdfs:domain se:Sport ;
+    rdfs:range se:epreuve .
+
+se:venue a rdf:Property ;
+    rdfs:label "venue" ;
+    rdfs:comment "Le lieu où se déroule une épreuve." ;
+    rdfs:domain se:epreuve ;
+    rdfs:range se:Venue .
+
+se:results a rdf:Property ;
+    rdfs:label "results" ;
+    rdfs:comment "Le résultat d'une épreuve." ;
+    rdfs:domain se:Ressource ;
+    rdfs:range se:Result .
+
+se:team a rdf:Property;
+    rdfs:label "team" ;
+    rdfs:comment "L'équipe qui participe à une epreuve." ;
+    rdfs:domain se:epreuve ;
+    rdfs:range se:Team .
+
+se:name a rdf:Property ;
+    rdfs:label "name" ;
+    rdfs:comment "Le nom d'une entité." ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range xsd:string .
+
+
+se:athleteOfResult a rdf:Property ;
+    rdfs:label "athleteOfResult" ;
+    rdfs:comment "L'athlète qui a réalisé un résultat." ;
+    rdfs:domain se:Result ;
+    rdfs:range rdf:Athlete .
+
+se:worldRecordValue a rdf:Property ;
+    rdfs:label "worldRecordValue" ;
+    rdfs:comment "La valeur du record du monde, comme le temps ou la distance." ;
+    rdfs:domain se:WorldRecord ;
+    rdfs:range xsd:float .
+
+se:unit a rdf:Property ;
+    rdfs:label "unit" ;
+    rdfs:comment "L'unité de mesure du record du monde, par exemple, 'secondes', 'mètres', etc." ;
+    rdfs:domain rdfs:Ressource ;
+    rdfs:range unit:Unit .
+
+
+se:value a rdf:Property ;
+    rdfs:label "performanceValue" ;
+    rdfs:comment "La performance d'un athlète ou d'une équipe dans une épreuve." ;
+    rdfs:domain se:Result ;
+    rdfs:range xsd:float .
+
+se:recordDate a rdf:Property ;
+    rdfs:label "recordDate" ;
+    rdfs:comment "La date à laquelle le record du monde a été établi." ;
+    rdfs:domain se:WorldRecord ;
+    rdfs:range xsd:date .
+
+se:recordHolder a rdf:Property ;
+    rdfs:label "recordHolder" ;
+    rdfs:comment "L'athlète qui détient le record du monde." ;
+    rdfs:domain se:WorldRecord ;
+    rdfs:range se:Athlete .
+
+se:worldRecord a rdf:Property ;
+    rdfs:label "worldRecord" ;
+    rdfs:comment "Le record du monde établi dans une epreuve." ;
+    rdfs:domain se:epreuve ;
+    rdfs:range se:WorldRecord .
+
+se:representsCountry a rdf:Property ;
+    rdfs:label "representsCountry" ;
+    rdfs:comment "Le pays représenté par un athlète ou une équipe." ;
+    rdfs:domain se:Athlete, se:Team ;
+    rdfs:range se:Country .
+
+se:birthDate a rdf:Property ;
+    rdfs:label "birthDate" ;
+    rdfs:comment "La date de naissance d'un athlète." ;
+    rdfs:domain se:Athlete ;
+    rdfs:range xsd:date .
+
+se:sexe a rdf:Property ;
+    rdfs:label "sexe" ;
+    rdfs:comment "Le sexe d'un athlète." ;
+    rdfs:domain se:Athlete ;
+    rdfs:range xsd:string .
+
+se:epreuveName a rdf:Property ;
+    rdfs:label "epreuveName" ;
+    rdfs:comment "Le nom d'une epreuve." ;
+    rdfs:domain se:epreuve ;
+    rdfs:range xsd:string .
+
+se:dateEvent a rdf:Property;
+    rdfs:label "dateEvent" ;
+    rdfs:comment "La date à laquelle une épreuve a lieu." ;
+    rdfs:domain se:epreuve ;
+    rdfs:range xsd:date .
+
+se:ticketAvailable a rdf:Property ;
+    rdfs:label "ticketAvailable" ;
+    rdfs:comment "Le nombre de billets disponibles pour une épreuve." ;
+    rdfs:domain se:epreuve ;
+    rdfs:range xsd:boolean .
+
+se:competitionStage a rdf:Property ;
+    rdfs:label "competitionStage" ;
+    rdfs:comment "Le stade de la compétition, comme les qualifications ou les finales." ;
+    rdfs:domain se:epreuve ;
+    rdfs:range xsd:string .
+
+# Classe pour représenter un podium
+se:Podium a rdfs:Class ;
+    rdfs:label "Podium" ;
+    rdfs:comment "Représente le podium d'une épreuve, avec les trois premiers athlètes." .
+
+# Propriétés pour le podium
+se:firstPlace a rdf:Property ;
+    rdfs:label "firstPlace" ;
+    rdfs:comment "L'athlète en première position." ;
+    rdfs:domain se:Podium ;
+    rdfs:range se:Athlete .
+
+se:secondPlace a rdf:Property ;
+    rdfs:label "secondPlace" ;
+    rdfs:comment "L'athlète en deuxième position." ;
+    rdfs:domain se:Podium ;
+    rdfs:range se:Athlete .
+
+se:thirdPlace a rdf:Property ;
+    rdfs:label "thirdPlace" ;
+    rdfs:comment "L'athlète en troisième position." ;
+    rdfs:domain se:Podium ;
+    rdfs:range se:Athlete .
