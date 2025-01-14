@@ -1,6 +1,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix se: <http://example.org/olympics2024/schema#> .
+@prefix sse: <http://example.org/olympics2024/skos#> .
 @prefix unit: <http://qudt.org/vocab/unit/> .
 
 # Sports
@@ -29,15 +30,18 @@ se:Sport_Collectif a se:Sport ;
 
 se:Stade_de_France a se:Venue ;
     rdfs:label "Stade de France" ;
-    rdfs:comment "Le Stade de France est un stade situé à Saint-Denis, en France." .
+    rdfs:comment "Le Stade de France est un stade situé à Saint-Denis, en France.";
+    se:infrastructureType sse:OlympicStadium .
 
 se:Defense_Arena a se:Venue ;
     rdfs:label "Defense Arena" ;
-    rdfs:comment "La Defense Arena est une salle située à Nanterre, en France." .
+    rdfs:comment "La Defense Arena est une salle située à Nanterre, en France." ;
+    se:infrastructureType sse:GymnasticsHalls, sse:BasketballHalls.
 
 se:Centre_aquatique_olympique a se:Venue ;
     rdfs:label "Centre aquatique olympique" ;
-    rdfs:comment "Le Centre aquatique olympique est une piscine située à Saint-Denis, en France." .
+    rdfs:comment "Le Centre aquatique olympique est une piscine située à Saint-Denis, en France.";
+    se:infrastructureType sse:Pools
 
 se:Stage_Pierre_Mauroy a se:Venue ;
     rdfs:label "Stage Pierre Mauroy" ;

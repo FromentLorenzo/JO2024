@@ -1,0 +1,92 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sse: <http://example.org/olympics2024/skos#> .
+
+
+# Venues
+
+sse:Venues a skos:Concept;
+    skos:prefLabel "Venues"@en;
+    skos:definition "Venues are places where events take place."@en;
+    skos:narrower sse:Stades, sse:Salles, sse:Piscines.
+
+sse:Stades a skos:Concept;
+    skos:prefLabel "Stadiums"@en;
+    skos:definition "Stadiums are large, open-air venues used for sports events."@en;
+    skos:broader sse:Venues;
+    skos:narrower sse:AthleticsStadium, sse:FootballStadium, sse:RugbyStadium, sse:OlympicStadium.
+
+sse:Salles a skos:Concept ;
+    skos:prefLabel "Halls"@en ;
+    skos:broader sse:Venues ;
+    skos:narrower sse:BasketballHalls, sse:VolleyballHalls, sse:GymnasticsHalls, sse:CombatSportsHalls.
+
+sse:Piscines a skos:Concept ;
+    skos:prefLabel "Pools"@en ;
+    skos:broader sse:Venues ;
+    skos:narrower sse:SwimmingPools, sse:DivingPools, sse:WaterPoloPools, sse:ArtisticSwimmingPools .
+
+#Stades
+
+sse:AthleticsStadium a skos:Concept ;
+    skos:prefLabel "Athletics Stadiums"@en ;
+    skos:definition "Stadiums designed for track and field events."@en ;
+    skos:broader sse:Stades .
+
+sse:FootballStadium a skos:Concept ;
+    skos:prefLabel "Football Stadiums"@en ;
+    skos:definition "Stadiums designed for football (soccer) matches."@en ;
+    skos:broader sse:Stades .
+
+sse:RugbyStadium a skos:Concept ;
+    skos:prefLabel "Rugby Stadiums"@en ;
+    skos:definition "Stadiums specifically designed for rugby matches."@en ;
+    skos:broader sse:Stades .
+
+sse:OlympicStadium a skos:Concept ;
+    skos:prefLabel "Olympic Stadiums"@en ;
+    skos:definition "Stadiums used for the Olympic Games, often designed for multiple sports and ceremonies."@en ;
+    skos:broader sse:Stades .
+
+#halls
+
+sse:BasketballHalls a skos:Concept ;
+    skos:prefLabel "Basketball Halls"@en ;
+    skos:definition "Halls designed for basketball games."@en ;
+    skos:broader sse:Salles .
+
+sse:VolleyballHalls a skos:Concept ;
+    skos:prefLabel "Volleyball Halls"@en ;
+    skos:definition "Halls designed for volleyball games."@en ;
+    skos:broader sse:Salles .
+
+sse:GymnasticsHalls a skos:Concept ;
+    skos:prefLabel "Gymnastics Halls"@en ;
+    skos:definition "Halls designed for gymnastics events."@en ;
+    skos:broader sse:Salles .
+
+sse:CombatSportsHalls a skos:Concept ;
+    skos:prefLabel "Combat Sports Halls"@en ;
+    skos:definition "Halls designed for combat sports such as boxing, judo, and wrestling."@en ;
+    skos:broader sse:Salles .
+
+#Pools
+
+sse:SwimmingPools a skos:Concept ;
+    skos:prefLabel "Swimming Pools"@en ;
+    skos:definition "Pools designed for swimming events, such as freestyle and backstroke."@en ;
+    skos:broader sse:Piscines .
+
+sse:DivingPools a skos:Concept ;
+    skos:prefLabel "Diving Pools"@en ;
+    skos:definition "Pools designed for diving events."@en ;
+    skos:broader sse:Piscines .
+
+sse:WaterPoloPools a skos:Concept ;
+    skos:prefLabel "Water Polo Pools"@en ;
+    skos:definition "Pools designed for water polo matches."@en ;
+    skos:broader sse:Piscines .
+
+sse:ArtisticSwimmingPools a skos:Concept ;
+    skos:prefLabel "Artistic Swimming Pools"@en ;
+    skos:definition "Pools designed for artistic swimming events."@en ;
+    skos:broader sse:Piscines .

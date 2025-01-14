@@ -219,3 +219,8 @@ se:thirdPlace a rdf:Property ;
 se:firstPlace owl:propertyDisjointWith se:secondPlace .
 se:firstPlace owl:propertyDisjointWith se:thirdPlace .
 se:secondPlace owl:propertyDisjointWith se:thirdPlace .
+
+
+se:infrastructureType a owl:ObjectProperty;
+    rdfs:domain se:Venue;
+    rdfs:range skos:Concept .
