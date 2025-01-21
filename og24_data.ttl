@@ -41,7 +41,7 @@ se:Defense_Arena a se:Venue ;
 se:Centre_aquatique_olympique a se:Venue ;
     rdfs:label "Centre aquatique olympique" ;
     rdfs:comment "Le Centre aquatique olympique est une piscine située à Saint-Denis, en France.";
-    se:infrastructureType sse:Pools
+    se:infrastructureType sse:Pools .
 
 se:Stage_Pierre_Mauroy a se:Venue ;
     rdfs:label "Stage Pierre Mauroy" ;

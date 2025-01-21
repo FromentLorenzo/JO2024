@@ -9,7 +9,7 @@
       "columns": [
         {
           "titles": "Id",
-          "propertyUrl": "http://example.org/vocab/Id"
+          "suppressOutput": true
         },
         {
           "titles": "Medal_type",
@@ -17,11 +17,11 @@
         },
         {
           "titles": "Medal_code",
-          "propertyUrl": "http://example.org/vocab/Medal_code"
+          "suppressOutput": true
         },
         {
           "titles": "Medal_date",
-          "propertyUrl": "http://example.org/vocab/Medal_date"
+          "suppressOutput": true
         },
         {
           "titles": "Name",
@@ -29,7 +29,7 @@
         },
         {
           "titles": "Gender",
-          "propertyUrl": "http://example.org/vocab/Gender"
+          "suppressOutput": true
         },
         {
           "titles": "Discipline",
@@ -37,7 +37,7 @@
         },
         {
           "titles": "Code_Discipline",
-          "propertyUrl": "http://example.org/vocab/Code_Discipline"
+          "suppressOutput": true
         },
         {
           "titles": "Event",
@@ -45,11 +45,11 @@
         },
         {
           "titles": "url_event",
-          "propertyUrl": "http://example.org/vocab/url_event"
+          "suppressOutput": true
         },
         {
           "titles": "Country_code",
-          "propertyUrl": "http://example.org/vocab/Country_code"
+          "suppressOutput": true
         },
         {
           "titles": "Country",

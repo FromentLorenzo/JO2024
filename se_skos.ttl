@@ -1,92 +1,266 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix sse: <http://example.org/olympics2024/skos#> .
 
+# Broad sport categories
 
-# Venues
+sse:Individual_Sports a skos:Concept ;
+    skos:prefLabel "Individual Sports" ;
+    skos:definition "Individual sports are those in which participants compete as individuals, focusing on personal skill and effort, without a team component." ;
+    skos:narrower sse:Archery, sse:Weightlifting, sse:Skateboarding, sse:Shooting, sse:Sport_Climbing, sse:Modern_Pentathlon, sse:Table_Tennis, sse:Equestrian, sse:Breaking, sse:Tennis, sse:Triathlon, sse:Golf .
 
-sse:Venues a skos:Concept;
-    skos:prefLabel "Venues"@en;
-    skos:definition "Venues are places where events take place."@en;
-    skos:narrower sse:Stades, sse:Salles, sse:Piscines.
+sse:Team_Sports a skos:Concept ;
+    skos:prefLabel "Team Sports" ;
+    skos:definition "Team sports involve organized groups of individuals working together as a team to achieve a common goal, usually by competing against other teams." ;
+    skos:narrower sse:Badminton, sse:Basketball, sse:Handball, sse:Hockey, sse:Football, sse:3x3_Basketball, sse:Rugby_Sevens, sse:Volleyball, sse:Beach_Volleyball .
 
-sse:Stades a skos:Concept;
-    skos:prefLabel "Stadiums"@en;
-    skos:definition "Stadiums are large, open-air venues used for sports events."@en;
-    skos:broader sse:Venues;
-    skos:narrower sse:AthleticsStadium, sse:FootballStadium, sse:RugbyStadium, sse:OlympicStadium.
+sse:Water_Sports a skos:Concept ;
+    skos:prefLabel "Water Sports" ;
+    skos:definition "Water sports encompass athletic activities that take place in or on water, including swimming, canoeing, surfing, and other activities involving water bodies." ;
+    skos:narrower sse:Diving, sse:Swimming, sse:Canoe_Sprint, sse:Canoe_Slalom, sse:Surfing, sse:Sailing, sse:Marathon_Swimming, sse:Rowing, sse:Water_Polo, sse:Artistic_Swimming .
 
-sse:Salles a skos:Concept ;
-    skos:prefLabel "Halls"@en ;
-    skos:broader sse:Venues ;
-    skos:narrower sse:BasketballHalls, sse:VolleyballHalls, sse:GymnasticsHalls, sse:CombatSportsHalls.
+sse:Combat_Sports a skos:Concept ;
+    skos:prefLabel "Combat Sports" ;
+    skos:definition "Combat sports are physical competitions where individuals or teams engage in a physical confrontation, often involving martial techniques or strategic combat." ;
+    skos:narrower sse:Wrestling, sse:Taekwondo, sse:Boxing, sse:Judo, sse:Fencing .
 
-sse:Piscines a skos:Concept ;
-    skos:prefLabel "Pools"@en ;
-    skos:broader sse:Venues ;
-    skos:narrower sse:SwimmingPools, sse:DivingPools, sse:WaterPoloPools, sse:ArtisticSwimmingPools .
+sse:Gymnastics a skos:Concept ;
+    skos:prefLabel "Gymnastics" ;
+    skos:definition "Gymnastics is a sport involving exercises that require physical strength, flexibility, balance, and coordination, performed on various apparatus or the floor." ;
+    skos:narrower sse:Rhythmic_Gymnastics, sse:Artistic_Gymnastics, sse:Trampoline_Gymnastics .
 
-#Stades
+sse:Cycling_Sports a skos:Concept ;
+    skos:prefLabel "Cycling Sports" ;
+    skos:definition "Cycling sports encompass all competitive events involving cycling, including track races, road races, mountain biking, and BMX." ;
+    skos:narrower sse:Cycling_BMX_Racing, sse:Cycling_Mountain_Bike, sse:Cycling_Road, sse:Cycling_Track, sse:Cycling_BMX_Freestyle .
 
-sse:AthleticsStadium a skos:Concept ;
-    skos:prefLabel "Athletics Stadiums"@en ;
-    skos:definition "Stadiums designed for track and field events."@en ;
-    skos:broader sse:Stades .
+sse:Athletics_Sports a skos:Concept ;
+    skos:prefLabel "Athletics Sports" ;
+    skos:definition "Athletics sports involve competitive activities like running, jumping, and throwing, which test speed, strength, and endurance." ;
+    skos:narrower sse:Athletics .
 
-sse:FootballStadium a skos:Concept ;
-    skos:prefLabel "Football Stadiums"@en ;
-    skos:definition "Stadiums designed for football (soccer) matches."@en ;
-    skos:broader sse:Stades .
+# Olympic sports
 
-sse:RugbyStadium a skos:Concept ;
-    skos:prefLabel "Rugby Stadiums"@en ;
-    skos:definition "Stadiums specifically designed for rugby matches."@en ;
-    skos:broader sse:Stades .
+sse:Diving a skos:Concept ;
+    skos:prefLabel "Diving" ;
+    skos:definition "Diving is a sport in which an individual or team jumps into water from a platform or springboard, often performing acrobatic movements." ;
+    skos:broader sse:Water_Sports .
 
-sse:OlympicStadium a skos:Concept ;
-    skos:prefLabel "Olympic Stadiums"@en ;
-    skos:definition "Stadiums used for the Olympic Games, often designed for multiple sports and ceremonies."@en ;
-    skos:broader sse:Stades .
+sse:Wrestling a skos:Concept ;
+    skos:prefLabel "Wrestling" ;
+    skos:definition "Wrestling is a combat sport where two individuals attempt to gain control over each other, typically involving grappling techniques." ;
+    skos:broader sse:Combat_Sports .
 
-#halls
+sse:Taekwondo a skos:Concept ;
+    skos:prefLabel "Taekwondo" ;
+    skos:definition "Taekwondo is a Korean martial art characterized by its emphasis on high kicks, jumping and spinning kicks, and fast footwork." ;
+    skos:broader sse:Combat_Sports .
 
-sse:BasketballHalls a skos:Concept ;
-    skos:prefLabel "Basketball Halls"@en ;
-    skos:definition "Halls designed for basketball games."@en ;
-    skos:broader sse:Salles .
+sse:Athletics a skos:Concept ;
+    skos:prefLabel "Athletics" ;
+    skos:definition "Athletics includes a variety of physical sports events, primarily involving running, jumping, throwing, and walking." ;
+    skos:broader sse:Athletics_Sports .
 
-sse:VolleyballHalls a skos:Concept ;
-    skos:prefLabel "Volleyball Halls"@en ;
-    skos:definition "Halls designed for volleyball games."@en ;
-    skos:broader sse:Salles .
+sse:Swimming a skos:Concept ;
+    skos:prefLabel "Swimming" ;
+    skos:definition "Swimming is an individual or team sport that involves racing or performing other activities in water." ;
+    skos:broader sse:Water_Sports .
 
-sse:GymnasticsHalls a skos:Concept ;
-    skos:prefLabel "Gymnastics Halls"@en ;
-    skos:definition "Halls designed for gymnastics events."@en ;
-    skos:broader sse:Salles .
+sse:Boxing a skos:Concept ;
+    skos:prefLabel "Boxing" ;
+    skos:definition "Boxing is a combat sport in which two people throw punches at each other while wearing gloves, typically inside a boxing ring." ;
+    skos:broader sse:Combat_Sports .
 
-sse:CombatSportsHalls a skos:Concept ;
-    skos:prefLabel "Combat Sports Halls"@en ;
-    skos:definition "Halls designed for combat sports such as boxing, judo, and wrestling."@en ;
-    skos:broader sse:Salles .
+sse:Archery a skos:Concept ;
+    skos:prefLabel "Archery" ;
+    skos:definition "Archery is the practice or sport of shooting arrows with a bow, either for competition or as a pastime." ;
+    skos:broader sse:Individual_Sports .
 
-#Pools
+sse:Weightlifting a skos:Concept ;
+    skos:prefLabel "Weightlifting" ;
+    skos:definition "Weightlifting is a sport in which athletes lift weights in the form of barbells or dumbbells, performing various lifting techniques." ;
+    skos:broader sse:Individual_Sports .
 
-sse:SwimmingPools a skos:Concept ;
-    skos:prefLabel "Swimming Pools"@en ;
-    skos:definition "Pools designed for swimming events, such as freestyle and backstroke."@en ;
-    skos:broader sse:Piscines .
+sse:Skateboarding a skos:Concept ;
+    skos:prefLabel "Skateboarding" ;
+    skos:definition "Skateboarding is an action sport that involves riding and performing tricks using a skateboard." ;
+    skos:broader sse:Individual_Sports .
 
-sse:DivingPools a skos:Concept ;
-    skos:prefLabel "Diving Pools"@en ;
-    skos:definition "Pools designed for diving events."@en ;
-    skos:broader sse:Piscines .
+sse:Judo a skos:Concept ;
+    skos:prefLabel "Judo" ;
+    skos:definition "Judo is a Japanese martial art focused on throws, joint locks, and pins to subdue opponents." ;
+    skos:broader sse:Combat_Sports .
 
-sse:WaterPoloPools a skos:Concept ;
-    skos:prefLabel "Water Polo Pools"@en ;
-    skos:definition "Pools designed for water polo matches."@en ;
-    skos:broader sse:Piscines .
+sse:Rhythmic_Gymnastics a skos:Concept ;
+    skos:prefLabel "Rhythmic Gymnastics" ;
+    skos:definition "Rhythmic Gymnastics is a sport that combines elements of ballet, gymnastics, dance, and apparatus manipulation, typically performed with ribbons, hoops, or balls." ;
+    skos:broader sse:Gymnastics .
 
-sse:ArtisticSwimmingPools a skos:Concept ;
-    skos:prefLabel "Artistic Swimming Pools"@en ;
-    skos:definition "Pools designed for artistic swimming events."@en ;
-    skos:broader sse:Piscines .
+sse:Canoe_Sprint a skos:Concept ;
+    skos:prefLabel "Canoe Sprint" ;
+    skos:definition "Canoe Sprint is a water sport in which athletes race in a canoe or kayak over a set distance." ;
+    skos:broader sse:Water_Sports .
+
+sse:Shooting a skos:Concept ;
+    skos:prefLabel "Shooting" ;
+    skos:definition "Shooting is a sport in which athletes use firearms or bows to hit targets with precision." ;
+    skos:broader sse:Individual_Sports .
+
+sse:Sport_Climbing a skos:Concept ;
+    skos:prefLabel "Sport Climbing" ;
+    skos:definition "Sport Climbing is a competitive form of climbing where athletes race to ascend vertical rock walls or artificial climbing walls." ;
+    skos:broader sse:Individual_Sports .
+
+sse:Badminton a skos:Concept ;
+    skos:prefLabel "Badminton" ;
+    skos:definition "Badminton is a racket sport in which players hit a shuttlecock over a net, aiming to score points by landing it in the opponent's half of the court." ;
+    skos:broader sse:Team_Sports .
+
+sse:Surfing a skos:Concept ;
+    skos:prefLabel "Surfing" ;
+    skos:definition "Surfing involves riding waves on a surfboard, with the goal of riding the wave for as long as possible." ;
+    skos:broader sse:Water_Sports .
+
+sse:Modern_Pentathlon a skos:Concept ;
+    skos:prefLabel "Modern Pentathlon" ;
+    skos:definition "Modern Pentathlon is a multi-sport event that includes fencing, swimming, equestrian show jumping, and a combined event of cross-country running and pistol shooting." ;
+    skos:broader sse:Individual_Sports .
+
+sse:Table_Tennis a skos:Concept ;
+    skos:prefLabel "Table Tennis" ;
+    skos:definition "Table Tennis, also known as ping pong, is a sport where players hit a lightweight ball back and forth across a table using small rackets." ;
+    skos:broader sse:Individual_Sports .
+
+sse:Cycling_BMX_Racing a skos:Concept ;
+    skos:prefLabel "Cycling BMX Racing" ;
+    skos:definition "Cycling BMX Racing is a form of competitive cycling that involves racing on dirt tracks with jumps and obstacles." ;
+    skos:broader sse:Cycling_Sports .
+
+sse:Cycling_Mountain_Bike a skos:Concept ;
+    skos:prefLabel "Cycling Mountain Bike" ;
+    skos:definition "Mountain biking is a form of cycling that takes place on off-road trails, often on rugged terrain or in mountainous areas." ;
+    skos:broader sse:Cycling_Sports .
+
+sse:Canoe_Slalom a skos:Concept ;
+    skos:prefLabel "Canoe Slalom" ;
+    skos:definition "Canoe Slalom is a timed water sport where athletes navigate a canoe or kayak through a course of gates on a river." ;
+    skos:broader sse:Water_Sports .
+
+sse:Artistic_Gymnastics a skos:Concept ;
+    skos:prefLabel "Artistic Gymnastics" ;
+    skos:definition "Artistic Gymnastics involves performances of acrobatic routines on various apparatus such as the vault, uneven bars, and balance beam." ;
+    skos:broader sse:Gymnastics .
+
+sse:Fencing a skos:Concept ;
+    skos:prefLabel "Fencing" ;
+    skos:definition "Fencing is a combat sport where two competitors fight using swords, scoring points by making contact with the opponent." ;
+    skos:broader sse:Combat_Sports .
+
+sse:Cycling_Road a skos:Concept ;
+    skos:prefLabel "Cycling Road" ;
+    skos:definition "Road cycling is a competitive form of cycling that takes place on paved roads, either in races or time trials." ;
+    skos:broader sse:Cycling_Sports .
+
+sse:Trampoline_Gymnastics a skos:Concept ;
+    skos:prefLabel "Trampoline Gymnastics" ;
+    skos:definition "Trampoline Gymnastics is a sport in which athletes perform acrobatic movements while jumping on a trampoline." ;
+    skos:broader sse:Gymnastics .
+
+sse:Sailing a skos:Concept ;
+    skos:prefLabel "Sailing" ;
+    skos:definition "Sailing is the sport of using wind to propel a boat or ship across water." ;
+    skos:broader sse:Water_Sports .
+
+sse:Marathon_Swimming a skos:Concept ;
+    skos:prefLabel "Marathon Swimming" ;
+    skos:definition "Marathon Swimming is an open-water long-distance swimming event, typically over distances of 10 kilometers or more." ;
+    skos:broader sse:Water_Sports .
+
+sse:Equestrian a skos:Concept ;
+    skos:prefLabel "Equestrian" ;
+    skos:definition "Equestrian sports involve horse riding, including disciplines such as show jumping, dressage, and eventing." ;
+    skos:broader sse:Individual_Sports .
+
+sse:Breaking a skos:Concept ;
+    skos:prefLabel "Breaking" ;
+    skos:definition "Breaking, also known as breakdancing, is a style of street dance involving acrobatic movements, spins, and footwork." ;
+    skos:broader sse:Individual_Sports .
+
+sse:Cycling_Track a skos:Concept ;
+    skos:prefLabel "Cycling Track" ;
+    skos:definition "Track cycling is a form of competitive cycling that takes place on a velodrome, involving different race formats." ;
+    skos:broader sse:Cycling_Sports .
+
+sse:Basketball_3x3 a skos:Concept ;
+    skos:prefLabel "3x3 Basketball" ;
+    skos:definition "3x3 Basketball is a fast-paced variation of traditional basketball played with three players on each side." ;
+    skos:broader sse:Team_Sports .
+
+sse:Basketball a skos:Concept ;
+    skos:prefLabel "Basketball" ;
+    skos:definition "Basketball is a team sport in which two teams of five players try to score points by shooting a ball through the opponent's hoop." ;
+    skos:broader sse:Team_Sports .
+
+sse:Handball a skos:Concept ;
+    skos:prefLabel "Handball" ;
+    skos:definition "Handball is a team sport where two teams of seven players each attempt to score by throwing a ball into the opposing team's goal." ;
+    skos:broader sse:Team_Sports .
+
+sse:Hockey a skos:Concept ;
+    skos:prefLabel "Hockey" ;
+    skos:definition "Hockey is a sport played with a ball or puck on ice or grass, where teams use sticks to score goals." ;
+    skos:broader sse:Team_Sports .
+
+sse:Rowing a skos:Concept ;
+    skos:prefLabel "Rowing" ;
+    skos:definition "Rowing is a sport in which athletes row a boat using oars, either individually or in teams." ;
+    skos:broader sse:Water_Sports .
+
+sse:Football a skos:Concept ;
+    skos:prefLabel "Football" ;
+    skos:definition "Football, also known as soccer in some countries, is a team sport in which two teams of eleven players try to score goals by getting a ball into the opponent's net." ;
+    skos:broader sse:Team_Sports .
+
+sse:Rugby_Sevens a skos:Concept ;
+    skos:prefLabel "Rugby Sevens" ;
+    skos:definition "Rugby Sevens is a variant of rugby where teams consist of seven players and matches are played over seven-minute halves." ;
+    skos:broader sse:Team_Sports .
+
+sse:Tennis a skos:Concept ;
+    skos:prefLabel "Tennis" ;
+    skos:definition "Tennis is a racket sport in which players compete to hit a ball over a net into the opponent's court, aiming to score points by making it unreturnable." ;
+    skos:broader sse:Individual_Sports .
+
+sse:Triathlon a skos:Concept ;
+    skos:prefLabel "Triathlon" ;
+    skos:definition "Triathlon is a multi-sport event involving swimming, cycling, and running, typically held in that order." ;
+    skos:broader sse:Individual_Sports .
+
+sse:Beach_Volleyball a skos:Concept ;
+    skos:prefLabel "Beach Volleyball" ;
+    skos:definition "Beach Volleyball is a variant of volleyball played on sand, typically with two players per team." ;
+    skos:broader sse:Team_Sports .
+
+sse:Volleyball a skos:Concept ;
+    skos:prefLabel "Volleyball" ;
+    skos:definition "Volleyball is a team sport in which two teams of six players try to score points by hitting a ball over a net into the opponent's court." ;
+    skos:broader sse:Team_Sports .
+
+sse:Cycling_BMX_Freestyle a skos:Concept ;
+    skos:prefLabel "Cycling BMX Freestyle" ;
+    skos:definition "Cycling BMX Freestyle is a form of BMX cycling where athletes perform aerial stunts, tricks, and acrobatics on a BMX bike." ;
+    skos:broader sse:Cycling_Sports .
+
+sse:Artistic_Swimming a skos:Concept ;
+    skos:prefLabel "Artistic Swimming" ;
+    skos:definition "Artistic Swimming, formerly known as synchronized swimming, is a sport that combines swimming, dance, and gymnastics performed in water." ;
+    skos:broader sse:Water_Sports .
+
+sse:Water_Polo a skos:Concept ;
+    skos:prefLabel "Water Polo" ;
+    skos:definition "Water Polo is a team water sport where two teams compete to score goals by throwing a ball into the opponent's goal while swimming." ;
+    skos:broader sse:Water_Sports .
+
+sse:Golf a skos:Concept ;
+    skos:prefLabel "Golf" ;
+    skos:definition "Golf is a sport where players use clubs to hit a ball into a series of holes on a course in as few strokes as possible." ;
+    skos:broader sse:Individual_Sports .
