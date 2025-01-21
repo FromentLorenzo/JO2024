@@ -1,0 +1,60 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "url": "data.csv",
+  "dialect": {
+    "delimiter": ";"
+  },
+  "tableSchema": {
+    "aboutUrl": "http://example.org/results/{Id}",
+      "columns": [
+        {
+          "titles": "Id",
+          "propertyUrl": "http://example.org/vocab/Id"
+        },
+        {
+          "titles": "Medal_type",
+          "propertyUrl": "http://example.org/vocab/Medal_type"
+        },
+        {
+          "titles": "Medal_code",
+          "propertyUrl": "http://example.org/vocab/Medal_code"
+        },
+        {
+          "titles": "Medal_date",
+          "propertyUrl": "http://example.org/vocab/Medal_date"
+        },
+        {
+          "titles": "Name",
+          "propertyUrl": "http://example.org/vocab/Name"
+        },
+        {
+          "titles": "Gender",
+          "propertyUrl": "http://example.org/vocab/Gender"
+        },
+        {
+          "titles": "Discipline",
+          "propertyUrl": "http://example.org/vocab/Discipline"
+        },
+        {
+          "titles": "Code_Discipline",
+          "propertyUrl": "http://example.org/vocab/Code_Discipline"
+        },
+        {
+          "titles": "Event",
+          "propertyUrl": "http://example.org/vocab/Event"
+        },
+        {
+          "titles": "url_event",
+          "propertyUrl": "http://example.org/vocab/url_event"
+        },
+        {
+          "titles": "Country_code",
+          "propertyUrl": "http://example.org/vocab/Country_code"
+        },
+        {
+          "titles": "Country",
+          "propertyUrl": "http://example.org/vocab/Country"
+        }
+      ]
+    }
+}
