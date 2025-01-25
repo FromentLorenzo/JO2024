@@ -1,0 +1,10 @@
+@prefix schema: <http://schema.org/>
+CONSTRUCT {
+  ?about schema:webTitle ?title.
+  ?about schema:webUrl ?url.
+
+} WHERE {
+
+  ?about schema:webTitle ?title.
+  ?about schema:webUrl ?url.
+}

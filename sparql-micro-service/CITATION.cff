@@ -1,0 +1,19 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: SPARQL Micro-Services
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Franck
+    family-names: Michel
+    email: franck.michel@inria.fr
+    affiliation: 'Univ. Côte d''Azur, CNRS, Inria'
+    orcid: 'https://orcid.org/0000-0001-9064-0463'
+repository-code: 'https://github.com/frmichel/sparql-micro-service'
+license: Apache-2.0
+version: 0.5.8
+date-released: '2024-07-22'

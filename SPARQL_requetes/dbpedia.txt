@@ -1,0 +1,35 @@
+PREFIX vocab: <http://example.org/vocab/>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?name ?birthDate ?height ?weight WHERE {
+  ?result vocab:Name ?name .
+
+  # Diviser le nom en parties
+  BIND(STRBEFORE(?name, " ") AS ?firstWord) # Premier mot
+  BIND(STRAFTER(?name, " ") AS ?secondWord) # Deuxième mot
+
+  # Créer le nom transformé
+  BIND(CONCAT(
+    UCASE(SUBSTR(?firstWord, 1, 1)), 
+    LCASE(SUBSTR(?firstWord, 2)), 
+    "_", 
+    UCASE(SUBSTR(?secondWord, 1, 1)), 
+    LCASE(SUBSTR(?secondWord, 2))
+  ) AS ?transformedName)
+
+  # Construire l'URL dynamique pour DBpedia
+  BIND(IRI(CONCAT("http://localhost/service/dbpedia/findInfos?about=", ?transformedName)) AS ?dbpedia_url)
+
+  # Interroger DBpedia via SERVICE
+  SERVICE ?dbpedia_url {
+    SELECT ?s ?p ?o WHERE {
+      ?s ?p ?o
+    }
+    ORDER BY ?o
+  }
+
+  # Utiliser des filtres pour classer les valeurs
+  BIND(IF(CONTAINS(STR(?o), "-"), ?o, "") AS ?birthDate) # Date contient un "-"
+  BIND(IF(STRLEN(STR(?o)) < 5 && CONTAINS(STR(?o), "."), ?o, "") AS ?height) # Taille (décimale courte)
+  BIND(IF(STRLEN(STR(?o)) > 4 && !CONTAINS(STR(?o), "-"), ?o, "") AS ?weight) # Poids (grande valeur)
+}

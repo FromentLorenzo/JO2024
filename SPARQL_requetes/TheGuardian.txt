@@ -1,0 +1,19 @@
+PREFIX vocab: <http://example.org/vocab/>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?name ?title ?url WHERE {
+  ?result vocab:Name ?name .
+  
+  # Construire l'URL dynamique pour Guardian
+  BIND(IRI(CONCAT("http://localhost/service/Guardian/newsPaper?about=", ?name)) AS ?Guardian_Url)
+
+  SERVICE ?Guardian_Url {
+    SELECT ?s ?p ?o WHERE {
+      ?s ?p ?o
+    }
+  }
+
+  # Séparer les titres et les URL
+  BIND(IF(?p = schema:webTitle, ?o, "") AS ?title)
+  BIND(IF(?p = schema:webUrl, ?o, "") AS ?url)
+}

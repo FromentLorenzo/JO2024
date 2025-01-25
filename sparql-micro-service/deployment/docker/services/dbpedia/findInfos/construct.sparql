@@ -1,0 +1,19 @@
+@prefix schema: <http://schema.org/>
+CONSTRUCT {
+  ?about schema:value ?birthDate
+  ?about schema:value ?height
+  ?about schema:value ?weight
+
+} WHERE {
+
+  ?about schema:birthDate [
+        schema:value ?birthDate
+    ].
+  ?about schema:height[
+    schema:value ?height
+  ].
+  ?about schema:weight[
+    schema:value ?weight
+  ].
+  
+}
