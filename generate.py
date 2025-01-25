@@ -46,8 +46,8 @@ def process_ttl_to_graph(ttl_file):
     g.parse(ttl_file, format="turtle")
 
 # Input file paths
-json_file_path = "input.json"
-ttl_file_path = "input.ttl"
+json_file_path = "triplets/merged.json"
+ttl_file_path = "csv/data.ttl"
 
 # Process data
 process_json_to_ttl(json_file_path)
