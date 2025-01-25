@@ -1,0 +1,82 @@
+[
+    {
+        "head": "basketball",
+        "type": "location",
+        "tail": "Pierre Mauroy Stadium"
+    },
+    {
+        "head": "basketball",
+        "type": "part of",
+        "tail": "Paris 2024 Olympic Games"
+    },
+    {
+        "head": "handball",
+        "type": "location",
+        "tail": "Pierre Mauroy Stadium"
+    },
+    {
+        "head": "handball",
+        "type": "part of",
+        "tail": "Paris 2024 Olympic Games"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "location",
+        "tail": "Pierre Mauroy Stadium"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "has part",
+        "tail": "basketball"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "has part",
+        "tail": "handball"
+    },
+    {
+        "head": "Metro",
+        "type": "located in",
+        "tail": "Lille"
+    },
+    {
+        "head": "Basketball",
+        "type": "has part",
+        "tail": "1"
+    },
+    {
+        "head": "Basketball",
+        "type": "has part",
+        "tail": "women"
+    },
+    {
+        "head": "1",
+        "type": "sport",
+        "tail": "Basketball"
+    },
+    {
+        "head": "women",
+        "type": "sport",
+        "tail": "Basketball"
+    },
+    {
+        "head": "Handball",
+        "type": "has part",
+        "tail": "1"
+    },
+    {
+        "head": "1",
+        "type": "sport",
+        "tail": "Handball"
+    },
+    {
+        "head": "Pierre Mauroy Stadium",
+        "type": "sport",
+        "tail": "Basketball"
+    },
+    {
+        "head": "Pierre Mauroy Stadium",
+        "type": "sport",
+        "tail": "Handball"
+    }
+]

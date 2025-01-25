@@ -1,0 +1,107 @@
+[
+    {
+        "head": "Porte de la Chapelle Arena",
+        "type": "sport",
+        "tail": "badminton"
+    },
+    {
+        "head": "Porte de la Chapelle Arena",
+        "type": "sport",
+        "tail": "rhythmic gymnastics"
+    },
+    {
+        "head": "Porte de la Chapelle Arena",
+        "type": "sport",
+        "tail": "Para badminton"
+    },
+    {
+        "head": "Porte de la Chapelle Arena",
+        "type": "sport",
+        "tail": "Para powerlifting"
+    },
+    {
+        "head": "Porte de la Chapelle Arena",
+        "type": "occupant",
+        "tail": "2024 Olympic and Paralympic Games"
+    },
+    {
+        "head": "Para badminton",
+        "type": "sport",
+        "tail": "badminton"
+    },
+    {
+        "head": "Para powerlifting",
+        "type": "location",
+        "tail": "Porte de la Chapelle Arena"
+    },
+    {
+        "head": "2024 Olympic and Paralympic Games",
+        "type": "location",
+        "tail": "Porte de la Chapelle Arena"
+    },
+    {
+        "head": "2024 Olympic and Paralympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "located in",
+        "tail": "18th arrondissement of Paris"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "located in",
+        "tail": "18th arrondissement of Paris"
+    },
+    {
+        "head": "Badminton",
+        "type": "number of participants",
+        "tail": "2"
+    },
+    {
+        "head": "Badminton",
+        "type": "has part",
+        "tail": "1 mixed"
+    },
+    {
+        "head": "2",
+        "type": "sport",
+        "tail": "Badminton"
+    },
+    {
+        "head": "1 mixed",
+        "type": "sport",
+        "tail": "Badminton"
+    },
+    {
+        "head": "Rhythmic gymnastics",
+        "type": "has part",
+        "tail": "women"
+    },
+    {
+        "head": "women",
+        "type": "subclass of",
+        "tail": "Rhythmic gymnastics"
+    },
+    {
+        "head": "Para badminton",
+        "type": "number of participants",
+        "tail": "16"
+    },
+    {
+        "head": "Para powerlifting",
+        "type": "number of participants",
+        "tail": "20"
+    },
+    {
+        "head": "Porte de la Chapelle Arena",
+        "type": "sport",
+        "tail": "Badminton"
+    },
+    {
+        "head": "Rhythmic gymnastics",
+        "type": "subclass of",
+        "tail": "Gymnastics"
+    }
+]

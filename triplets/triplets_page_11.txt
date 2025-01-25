@@ -1,0 +1,37 @@
+[
+    {
+        "head": "Olympic Games",
+        "type": "location",
+        "tail": "South Paris 1 Arena"
+    },
+    {
+        "head": "Paralympic Games",
+        "type": "location",
+        "tail": "South Paris 1 Arena"
+    },
+    {
+        "head": "Paris Expo",
+        "type": "location",
+        "tail": "Porte de Versailles"
+    },
+    {
+        "head": "Volleyball",
+        "type": "different from",
+        "tail": "boccia"
+    },
+    {
+        "head": "boccia",
+        "type": "different from",
+        "tail": "Volleyball"
+    },
+    {
+        "head": "South Paris 1 Arena",
+        "type": "sport",
+        "tail": "Volleyball"
+    },
+    {
+        "head": "South Paris 1 Arena",
+        "type": "sport",
+        "tail": "Boccia"
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "head": "Vaires-sur-Marne Nautical Stadium",
+        "type": "occupant",
+        "tail": "2024 Olympic and Paralympic Games"
+    },
+    {
+        "head": "2024 Olympic and Paralympic Games",
+        "type": "location",
+        "tail": "Vaires-sur-Marne Nautical Stadium"
+    },
+    {
+        "head": "2024 Olympic and Paralympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "Rowing",
+        "type": "has part",
+        "tail": "events"
+    },
+    {
+        "head": "events",
+        "type": "part of",
+        "tail": "Rowing"
+    },
+    {
+        "head": "Canoe sprint",
+        "type": "number of participants",
+        "tail": "10"
+    },
+    {
+        "head": "Canoe slalom",
+        "type": "number of participants",
+        "tail": "6"
+    },
+    {
+        "head": "Para rowing",
+        "type": "sport",
+        "tail": "rowing"
+    },
+    {
+        "head": "Para canoe",
+        "type": "number of participants",
+        "tail": "10"
+    },
+    {
+        "head": "Vaires-sur-Marne Nautical Stadium",
+        "type": "sport",
+        "tail": "Rowing"
+    },
+    {
+        "head": "Nautical Stadium",
+        "type": "located in",
+        "tail": "Vaires-sur-Marne"
+    },
+    {
+        "head": "Vaires-sur-Marne Nautical Stadium",
+        "type": "sport",
+        "tail": "Canoe Slalom"
+    },
+    {
+        "head": "Vaires-sur-Marne Nautical Stadium",
+        "type": "sport",
+        "tail": "Para Rowing"
+    },
+    {
+        "head": "Vaires-sur-Marne Nautical Stadium",
+        "type": "located in",
+        "tail": "Vaires-sur-Marne"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "Sport climbing",
+        "type": "has part",
+        "tail": "bouldering"
+    },
+    {
+        "head": "Sport climbing",
+        "type": "has part",
+        "tail": "speed"
+    },
+    {
+        "head": "bouldering",
+        "type": "subclass of",
+        "tail": "Sport climbing"
+    },
+    {
+        "head": "speed",
+        "type": "subclass of",
+        "tail": "Sport climbing"
+    },
+    {
+        "head": "Sport Climbing",
+        "type": "sport",
+        "tail": "Climbing"
+    }
+]

@@ -1,0 +1,67 @@
+[
+    {
+        "head": "Parc Georges-Valbon",
+        "type": "located in",
+        "tail": "La Courneuve"
+    },
+    {
+        "head": "Paris 2024 Paralympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "Paralympic marathon",
+        "type": "has part",
+        "tail": "3 events"
+    },
+    {
+        "head": "Paralympic marathon",
+        "type": "has part",
+        "tail": "1 for men"
+    },
+    {
+        "head": "Paralympic marathon",
+        "type": "has part",
+        "tail": "1 for women"
+    },
+    {
+        "head": "Paralympic marathon",
+        "type": "has part",
+        "tail": "1 mixed"
+    },
+    {
+        "head": "3 events",
+        "type": "subclass of",
+        "tail": "Paralympic marathon"
+    },
+    {
+        "head": "1 for men",
+        "type": "subclass of",
+        "tail": "Paralympic marathon"
+    },
+    {
+        "head": "1 for women",
+        "type": "subclass of",
+        "tail": "Paralympic marathon"
+    },
+    {
+        "head": "1 mixed",
+        "type": "subclass of",
+        "tail": "Paralympic marathon"
+    },
+    {
+        "head": "Paralympic Marathon",
+        "type": "location",
+        "tail": "Parc Georges-Valbon"
+    }
+]

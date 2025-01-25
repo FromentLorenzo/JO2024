@@ -1,0 +1,37 @@
+[
+    {
+        "head": "National Velodrome",
+        "type": "located in",
+        "tail": "Saint-Quentin-en-Yvelines"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "Track cycling",
+        "type": "number of participants",
+        "tail": "12"
+    },
+    {
+        "head": "Para cycling",
+        "type": "number of participants",
+        "tail": "17"
+    },
+    {
+        "head": "Track Cycling",
+        "type": "subclass of",
+        "tail": "Cycling"
+    },
+    {
+        "head": "Para Cycling",
+        "type": "location",
+        "tail": "National Velodrome"
+    }
+]

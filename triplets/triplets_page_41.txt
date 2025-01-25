@@ -1,0 +1,92 @@
+[
+    {
+        "head": "Paris La Défense Arena",
+        "type": "located in",
+        "tail": "Nanterre"
+    },
+    {
+        "head": "Nanterre",
+        "type": "owner of",
+        "tail": "Paris La Défense Arena"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "location",
+        "tail": "Paris La Défense Arena"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "Swimming",
+        "type": "has part",
+        "tail": "35 events"
+    },
+    {
+        "head": "35 events",
+        "type": "sport",
+        "tail": "Swimming"
+    },
+    {
+        "head": "Water polo",
+        "type": "has part",
+        "tail": "1"
+    },
+    {
+        "head": "Water polo",
+        "type": "has part",
+        "tail": "women"
+    },
+    {
+        "head": "1",
+        "type": "sport",
+        "tail": "Water polo"
+    },
+    {
+        "head": "women",
+        "type": "sport",
+        "tail": "Water polo"
+    },
+    {
+        "head": "Para swimming",
+        "type": "has part",
+        "tail": "141 events"
+    },
+    {
+        "head": "141 events",
+        "type": "sport",
+        "tail": "Para swimming"
+    },
+    {
+        "head": "Swimming",
+        "type": "subclass of",
+        "tail": "Aquatic Sports"
+    },
+    {
+        "head": "Aquatic Sports",
+        "type": "has part",
+        "tail": "Swimming"
+    },
+    {
+        "head": "La Défense Arena",
+        "type": "sport",
+        "tail": "Water polo"
+    },
+    {
+        "head": "La Défense Arena",
+        "type": "location",
+        "tail": "Paris"
+    }
+]

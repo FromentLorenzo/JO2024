@@ -1,0 +1,32 @@
+[
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Papeete",
+        "type": "area",
+        "tail": "75"
+    },
+    {
+        "head": "Surfing",
+        "type": "uses",
+        "tail": "shortboard"
+    },
+    {
+        "head": "shortboard",
+        "type": "sport",
+        "tail": "Surfing"
+    },
+    {
+        "head": "Surfing",
+        "type": "subclass of",
+        "tail": "Sport"
+    },
+    {
+        "head": "Water Sports",
+        "type": "subclass of",
+        "tail": "Sport"
+    }
+]

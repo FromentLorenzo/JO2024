@@ -1,0 +1,62 @@
+[
+    {
+        "head": "Paris 2024 Olympic and Paralympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Paris Expo",
+        "type": "location",
+        "tail": "Porte de Versailles"
+    },
+    {
+        "head": "Weightlifting",
+        "type": "has part",
+        "tail": "5 events"
+    },
+    {
+        "head": "Weightlifting",
+        "type": "has part",
+        "tail": "5"
+    },
+    {
+        "head": "5 events",
+        "type": "sport",
+        "tail": "Weightlifting"
+    },
+    {
+        "head": "5",
+        "type": "sport",
+        "tail": "Weightlifting"
+    },
+    {
+        "head": "Handball",
+        "type": "different from",
+        "tail": "goalball"
+    },
+    {
+        "head": "goalball",
+        "type": "different from",
+        "tail": "Handball"
+    },
+    {
+        "head": "Weightlifting",
+        "type": "instance of",
+        "tail": "Sport"
+    },
+    {
+        "head": "Sport",
+        "type": "has part",
+        "tail": "Weightlifting"
+    },
+    {
+        "head": "South Paris 6 Arena",
+        "type": "sport",
+        "tail": "Handball"
+    },
+    {
+        "head": "Goalball",
+        "type": "instance of",
+        "tail": "Sport"
+    }
+]

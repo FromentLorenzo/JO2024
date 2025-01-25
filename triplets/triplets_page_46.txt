@@ -1,0 +1,27 @@
+[
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "BMX racing",
+        "type": "subclass of",
+        "tail": "2 events"
+    },
+    {
+        "head": "BMX Racing",
+        "type": "sport",
+        "tail": "Cycling"
+    }
+]

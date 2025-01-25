@@ -1,0 +1,97 @@
+[
+    {
+        "head": "archery",
+        "type": "part of",
+        "tail": "2024 Olympic and Paralympic Games"
+    },
+    {
+        "head": "Para archery",
+        "type": "part of",
+        "tail": "2024 Olympic and Paralympic Games"
+    },
+    {
+        "head": "cycling time trial",
+        "type": "part of",
+        "tail": "2024 Olympic and Paralympic Games"
+    },
+    {
+        "head": "marathon",
+        "type": "part of",
+        "tail": "2024 Olympic and Paralympic Games"
+    },
+    {
+        "head": "2024 Olympic and Paralympic Games",
+        "type": "has part",
+        "tail": "archery"
+    },
+    {
+        "head": "2024 Olympic and Paralympic Games",
+        "type": "has part",
+        "tail": "Para archery"
+    },
+    {
+        "head": "2024 Olympic and Paralympic Games",
+        "type": "has part",
+        "tail": "cycling time trial"
+    },
+    {
+        "head": "2024 Olympic and Paralympic Games",
+        "type": "has part",
+        "tail": "marathon"
+    },
+    {
+        "head": "2024 Olympic and Paralympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "located in",
+        "tail": "7th arrondissement of Paris"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "located in",
+        "tail": "7th arrondissement of Paris"
+    },
+    {
+        "head": "Archery",
+        "type": "subclass of",
+        "tail": "5 events"
+    },
+    {
+        "head": "Para archery",
+        "type": "sport",
+        "tail": "archery"
+    },
+    {
+        "head": "marathon",
+        "type": "has part",
+        "tail": "Cycling time trial"
+    },
+    {
+        "head": "Archery",
+        "type": "subclass of",
+        "tail": "Precision Sports"
+    },
+    {
+        "head": "Para archery",
+        "type": "subclass of",
+        "tail": "Sport"
+    },
+    {
+        "head": "Sport",
+        "type": "has part",
+        "tail": "Para archery"
+    },
+    {
+        "head": "Cycling time trial",
+        "type": "sport",
+        "tail": "Cycling"
+    },
+    {
+        "head": "Marathon",
+        "type": "sport",
+        "tail": "Athletics"
+    }
+]

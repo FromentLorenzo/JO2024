@@ -1,0 +1,37 @@
+[
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "city centre",
+        "type": "located in",
+        "tail": "Marseille"
+    },
+    {
+        "head": "windsurfing",
+        "type": "sport",
+        "tail": "Sailing"
+    },
+    {
+        "head": "dinghy",
+        "type": "sport",
+        "tail": "Sailing"
+    },
+    {
+        "head": "skiff",
+        "type": "sport",
+        "tail": "Sailing"
+    },
+    {
+        "head": "kiteboarding",
+        "type": "sport",
+        "tail": "Sailing"
+    },
+    {
+        "head": "Marseille Marina",
+        "type": "sport",
+        "tail": "Sailing"
+    }
+]

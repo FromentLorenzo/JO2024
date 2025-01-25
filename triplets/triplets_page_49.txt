@@ -1,0 +1,122 @@
+[
+    {
+        "head": "athletics",
+        "type": "location",
+        "tail": "Stade de France"
+    },
+    {
+        "head": "athletics",
+        "type": "part of",
+        "tail": "Paris 2024 Olympic Games"
+    },
+    {
+        "head": "rugby",
+        "type": "location",
+        "tail": "Stade de France"
+    },
+    {
+        "head": "rugby",
+        "type": "part of",
+        "tail": "Paris 2024 Olympic Games"
+    },
+    {
+        "head": "rugby",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "has part",
+        "tail": "athletics"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "has part",
+        "tail": "rugby"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Para athletics",
+        "type": "part of",
+        "tail": "Paralympic Games"
+    },
+    {
+        "head": "Paralympic Games",
+        "type": "has part",
+        "tail": "Para athletics"
+    },
+    {
+        "head": "Olympic",
+        "type": "located in",
+        "tail": "Saint-Denis"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "located in",
+        "tail": "Saint-Denis"
+    },
+    {
+        "head": "Athletics",
+        "type": "has part",
+        "tail": "events"
+    },
+    {
+        "head": "events",
+        "type": "part of",
+        "tail": "Athletics"
+    },
+    {
+        "head": "Rugby",
+        "type": "has part",
+        "tail": "1"
+    },
+    {
+        "head": "Rugby",
+        "type": "has part",
+        "tail": "women"
+    },
+    {
+        "head": "1",
+        "type": "sport",
+        "tail": "Rugby"
+    },
+    {
+        "head": "1",
+        "type": "sports league level",
+        "tail": "1"
+    },
+    {
+        "head": "Para athletics",
+        "type": "subclass of",
+        "tail": "events"
+    },
+    {
+        "head": "Athletics",
+        "type": "has part",
+        "tail": "Track and Field"
+    },
+    {
+        "head": "Track and Field",
+        "type": "subclass of",
+        "tail": "Athletics"
+    },
+    {
+        "head": "Stade de France",
+        "type": "sport",
+        "tail": "Rugby"
+    },
+    {
+        "head": "Para Athletics",
+        "type": "has part",
+        "tail": "Para Track and Field"
+    },
+    {
+        "head": "Para Track and Field",
+        "type": "subclass of",
+        "tail": "Para Athletics"
+    }
+]

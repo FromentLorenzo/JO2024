@@ -1,0 +1,57 @@
+[
+    {
+        "head": "North Paris Arena",
+        "type": "located in",
+        "tail": "Paris Nord Villepinte"
+    },
+    {
+        "head": "Paris 2024 Olympic and Paralympic Games",
+        "type": "location",
+        "tail": "North Paris Arena"
+    },
+    {
+        "head": "Paris 2024 Olympic and Paralympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "Boxing",
+        "type": "number of participants",
+        "tail": "6"
+    },
+    {
+        "head": "Boxing",
+        "type": "number of participants",
+        "tail": "7"
+    },
+    {
+        "head": "sitting volleyball",
+        "type": "number of participants",
+        "tail": "1"
+    },
+    {
+        "head": "Boxing",
+        "type": "subclass of",
+        "tail": "Combat Sports"
+    },
+    {
+        "head": "Combat Sports",
+        "type": "has part",
+        "tail": "Boxing"
+    },
+    {
+        "head": "North Paris Arena",
+        "type": "sport",
+        "tail": "Sitting volleyball"
+    }
+]

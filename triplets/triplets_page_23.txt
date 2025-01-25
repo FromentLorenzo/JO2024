@@ -1,0 +1,37 @@
+[
+    {
+        "head": "Paris 2024 Paralympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "Clichy-sous-Bois",
+        "type": "length",
+        "tail": "13.9"
+    },
+    {
+        "head": "men",
+        "type": "number of participants",
+        "tail": "26"
+    },
+    {
+        "head": "women",
+        "type": "number of participants",
+        "tail": "26"
+    },
+    {
+        "head": "Para cycling road events",
+        "type": "subclass of",
+        "tail": "Para cycling"
+    }
+]

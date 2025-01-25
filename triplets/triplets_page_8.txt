@@ -1,0 +1,67 @@
+[
+    {
+        "head": "judo",
+        "type": "location",
+        "tail": "Champ-de-Mars Arena"
+    },
+    {
+        "head": "wrestling",
+        "type": "location",
+        "tail": "Champ-de-Mars Arena"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "located in",
+        "tail": "7th arrondissement of Paris"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "located in",
+        "tail": "7th arrondissement of Paris"
+    },
+    {
+        "head": "men",
+        "type": "sport",
+        "tail": "judo"
+    },
+    {
+        "head": "women",
+        "type": "sport",
+        "tail": "judo"
+    },
+    {
+        "head": "freestyle",
+        "type": "subclass of",
+        "tail": "Wrestling"
+    },
+    {
+        "head": "Para judo",
+        "type": "number of participants",
+        "tail": "16"
+    },
+    {
+        "head": "Judo",
+        "type": "subclass of",
+        "tail": "Martial Arts"
+    },
+    {
+        "head": "Wrestling",
+        "type": "subclass of",
+        "tail": "Martial Arts"
+    },
+    {
+        "head": "Para judo",
+        "type": "subclass of",
+        "tail": "Para Martial Arts"
+    },
+    {
+        "head": "Champ-de-Mars Arena",
+        "type": "sport",
+        "tail": "Wheelchair rugby"
+    }
+]

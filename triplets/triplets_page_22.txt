@@ -1,0 +1,47 @@
+[
+    {
+        "head": "Paris 2024",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Centre-Val de Loire",
+        "type": "instance of",
+        "tail": "region"
+    },
+    {
+        "head": "10m air rifle",
+        "type": "sport",
+        "tail": "shooting"
+    },
+    {
+        "head": "50m rifle",
+        "type": "sport",
+        "tail": "shooting"
+    },
+    {
+        "head": "25m pistol",
+        "type": "sport",
+        "tail": "shooting"
+    },
+    {
+        "head": "Paralympic Games",
+        "type": "has part",
+        "tail": "shooting Para sport"
+    },
+    {
+        "head": "shooting Para sport",
+        "type": "part of",
+        "tail": "Paralympic Games"
+    },
+    {
+        "head": "Châteauroux National Shooting Centre",
+        "type": "sport",
+        "tail": "Shooting"
+    },
+    {
+        "head": "National Shooting Centre",
+        "type": "located in",
+        "tail": "Châteauroux"
+    }
+]

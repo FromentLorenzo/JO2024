@@ -1,0 +1,52 @@
+[
+    {
+        "head": "table tennis",
+        "type": "part of",
+        "tail": "Olympic Games"
+    },
+    {
+        "head": "Olympic Games",
+        "type": "has part",
+        "tail": "table tennis"
+    },
+    {
+        "head": "Para table tennis",
+        "type": "part of",
+        "tail": "Paralympic Games"
+    },
+    {
+        "head": "Paralympic Games",
+        "type": "has part",
+        "tail": "Para table tennis"
+    },
+    {
+        "head": "Paris Expo",
+        "type": "location",
+        "tail": "Porte de Versailles"
+    },
+    {
+        "head": "Para table tennis",
+        "type": "sport",
+        "tail": "Table tennis"
+    },
+    {
+        "head": "Table tennis",
+        "type": "instance of",
+        "tail": "Sport"
+    },
+    {
+        "head": "Racquet Sports",
+        "type": "subclass of",
+        "tail": "Sport"
+    },
+    {
+        "head": "Para table tennis",
+        "type": "sport",
+        "tail": "Para Racquet Sports"
+    },
+    {
+        "head": "Para Racquet Sports",
+        "type": "has part",
+        "tail": "Para table tennis"
+    }
+]

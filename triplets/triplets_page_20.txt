@@ -1,0 +1,67 @@
+[
+    {
+        "head": "Paris 2024",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "eventing",
+        "type": "has part",
+        "tail": "jumping"
+    },
+    {
+        "head": "Olympic Games",
+        "type": "has part",
+        "tail": "dressage"
+    },
+    {
+        "head": "Olympic Games",
+        "type": "has part",
+        "tail": "eventing"
+    },
+    {
+        "head": "Olympic Games",
+        "type": "has part",
+        "tail": "jumping"
+    },
+    {
+        "head": "dressage",
+        "type": "part of",
+        "tail": "Olympic Games"
+    },
+    {
+        "head": "eventing",
+        "type": "part of",
+        "tail": "Olympic Games"
+    },
+    {
+        "head": "jumping",
+        "type": "part of",
+        "tail": "Olympic Games"
+    },
+    {
+        "head": "para equestrian events",
+        "type": "part of",
+        "tail": "Paralympic Games"
+    },
+    {
+        "head": "Dressage",
+        "type": "subclass of",
+        "tail": "Equestrian"
+    },
+    {
+        "head": "Eventing",
+        "type": "subclass of",
+        "tail": "Equestrian"
+    },
+    {
+        "head": "Jumping",
+        "type": "part of",
+        "tail": "Equestrian"
+    },
+    {
+        "head": "Equestrian",
+        "type": "has part",
+        "tail": "Jumping"
+    }
+]

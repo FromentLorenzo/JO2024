@@ -1,0 +1,92 @@
+[
+    {
+        "head": "Aquatics Centre",
+        "type": "located in",
+        "tail": "Saint-Denis"
+    },
+    {
+        "head": "artistic swimming",
+        "type": "location",
+        "tail": "Aquatics Centre"
+    },
+    {
+        "head": "water polo",
+        "type": "location",
+        "tail": "Aquatics Centre"
+    },
+    {
+        "head": "diving",
+        "type": "location",
+        "tail": "Aquatics Centre"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "location",
+        "tail": "Aquatics Centre"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "Artistic swimming",
+        "type": "has part",
+        "tail": "2 events"
+    },
+    {
+        "head": "2 events",
+        "type": "part of",
+        "tail": "Artistic swimming"
+    },
+    {
+        "head": "2 events",
+        "type": "sport",
+        "tail": "Water polo"
+    },
+    {
+        "head": "1 for men",
+        "type": "sport",
+        "tail": "Water polo"
+    },
+    {
+        "head": "1 for women",
+        "type": "sport",
+        "tail": "Water polo"
+    },
+    {
+        "head": "4 for men",
+        "type": "sport",
+        "tail": "Water polo"
+    },
+    {
+        "head": "4 for women",
+        "type": "sport",
+        "tail": "Water polo"
+    },
+    {
+        "head": "Artistic swimming",
+        "type": "subclass of",
+        "tail": "Sport"
+    },
+    {
+        "head": "Aquatics Centre",
+        "type": "sport",
+        "tail": "Water polo"
+    },
+    {
+        "head": "Aquatics Centre",
+        "type": "sport",
+        "tail": "Diving"
+    }
+]

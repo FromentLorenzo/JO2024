@@ -1,0 +1,42 @@
+[
+    {
+        "head": "Paris 2024 Olympic and Paralympic Games",
+        "type": "location",
+        "tail": "Eiffel Tower Stadium"
+    },
+    {
+        "head": "Paris 2024 Olympic and Paralympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Metro",
+        "type": "located in",
+        "tail": "Paris"
+    },
+    {
+        "head": "RER",
+        "type": "located in",
+        "tail": "Paris"
+    },
+    {
+        "head": "Beach volleyball",
+        "type": "number of participants",
+        "tail": "2"
+    },
+    {
+        "head": "Blind football",
+        "type": "number of participants",
+        "tail": "1"
+    },
+    {
+        "head": "Eiffel Tower Stadium",
+        "type": "sport",
+        "tail": "Beach Volleyball"
+    },
+    {
+        "head": "Eiffel Tower Stadium",
+        "type": "sport",
+        "tail": "Blind Football"
+    }
+]

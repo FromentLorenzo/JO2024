@@ -1,0 +1,1942 @@
+[
+    {
+        "head": "North Paris Arena",
+        "type": "located in",
+        "tail": "Paris Nord Villepinte"
+    },
+    {
+        "head": "Paris 2024 Olympic and Paralympic Games",
+        "type": "location",
+        "tail": "North Paris Arena"
+    },
+    {
+        "head": "Paris 2024 Olympic and Paralympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "Boxing",
+        "type": "number of participants",
+        "tail": "6"
+    },
+    {
+        "head": "Boxing",
+        "type": "number of participants",
+        "tail": "7"
+    },
+    {
+        "head": "sitting volleyball",
+        "type": "number of participants",
+        "tail": "1"
+    },
+    {
+        "head": "Boxing",
+        "type": "subclass of",
+        "tail": "Combat Sports"
+    },
+    {
+        "head": "Combat Sports",
+        "type": "has part",
+        "tail": "Boxing"
+    },
+    {
+        "head": "North Paris Arena",
+        "type": "sport",
+        "tail": "Sitting volleyball"
+    },
+    {
+        "head": "Olympic Games",
+        "type": "location",
+        "tail": "South Paris 1 Arena"
+    },
+    {
+        "head": "Paralympic Games",
+        "type": "location",
+        "tail": "South Paris 1 Arena"
+    },
+    {
+        "head": "Paris Expo",
+        "type": "location",
+        "tail": "Porte de Versailles"
+    },
+    {
+        "head": "Volleyball",
+        "type": "different from",
+        "tail": "boccia"
+    },
+    {
+        "head": "boccia",
+        "type": "different from",
+        "tail": "Volleyball"
+    },
+    {
+        "head": "South Paris 1 Arena",
+        "type": "sport",
+        "tail": "Volleyball"
+    },
+    {
+        "head": "South Paris 1 Arena",
+        "type": "sport",
+        "tail": "Boccia"
+    },
+    {
+        "head": "table tennis",
+        "type": "part of",
+        "tail": "Olympic Games"
+    },
+    {
+        "head": "Olympic Games",
+        "type": "has part",
+        "tail": "table tennis"
+    },
+    {
+        "head": "Para table tennis",
+        "type": "part of",
+        "tail": "Paralympic Games"
+    },
+    {
+        "head": "Paralympic Games",
+        "type": "has part",
+        "tail": "Para table tennis"
+    },
+    {
+        "head": "Paris Expo",
+        "type": "location",
+        "tail": "Porte de Versailles"
+    },
+    {
+        "head": "Para table tennis",
+        "type": "sport",
+        "tail": "Table tennis"
+    },
+    {
+        "head": "Table tennis",
+        "type": "instance of",
+        "tail": "Sport"
+    },
+    {
+        "head": "Racquet Sports",
+        "type": "subclass of",
+        "tail": "Sport"
+    },
+    {
+        "head": "Para table tennis",
+        "type": "sport",
+        "tail": "Para Racquet Sports"
+    },
+    {
+        "head": "Para Racquet Sports",
+        "type": "has part",
+        "tail": "Para table tennis"
+    },
+    {
+        "head": "Paris 2024 Olympic and Paralympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Paris Expo",
+        "type": "location",
+        "tail": "Porte de Versailles"
+    },
+    {
+        "head": "Weightlifting",
+        "type": "has part",
+        "tail": "5 events"
+    },
+    {
+        "head": "Weightlifting",
+        "type": "has part",
+        "tail": "5"
+    },
+    {
+        "head": "5 events",
+        "type": "sport",
+        "tail": "Weightlifting"
+    },
+    {
+        "head": "5",
+        "type": "sport",
+        "tail": "Weightlifting"
+    },
+    {
+        "head": "Handball",
+        "type": "different from",
+        "tail": "goalball"
+    },
+    {
+        "head": "goalball",
+        "type": "different from",
+        "tail": "Handball"
+    },
+    {
+        "head": "Weightlifting",
+        "type": "instance of",
+        "tail": "Sport"
+    },
+    {
+        "head": "Sport",
+        "type": "has part",
+        "tail": "Weightlifting"
+    },
+    {
+        "head": "South Paris 6 Arena",
+        "type": "sport",
+        "tail": "Handball"
+    },
+    {
+        "head": "Goalball",
+        "type": "instance of",
+        "tail": "Sport"
+    },
+    {
+        "head": "Porte de la Chapelle Arena",
+        "type": "sport",
+        "tail": "badminton"
+    },
+    {
+        "head": "Porte de la Chapelle Arena",
+        "type": "sport",
+        "tail": "rhythmic gymnastics"
+    },
+    {
+        "head": "Porte de la Chapelle Arena",
+        "type": "sport",
+        "tail": "Para badminton"
+    },
+    {
+        "head": "Porte de la Chapelle Arena",
+        "type": "sport",
+        "tail": "Para powerlifting"
+    },
+    {
+        "head": "Porte de la Chapelle Arena",
+        "type": "occupant",
+        "tail": "2024 Olympic and Paralympic Games"
+    },
+    {
+        "head": "Para badminton",
+        "type": "sport",
+        "tail": "badminton"
+    },
+    {
+        "head": "Para powerlifting",
+        "type": "location",
+        "tail": "Porte de la Chapelle Arena"
+    },
+    {
+        "head": "2024 Olympic and Paralympic Games",
+        "type": "location",
+        "tail": "Porte de la Chapelle Arena"
+    },
+    {
+        "head": "2024 Olympic and Paralympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "located in",
+        "tail": "18th arrondissement of Paris"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "located in",
+        "tail": "18th arrondissement of Paris"
+    },
+    {
+        "head": "Badminton",
+        "type": "number of participants",
+        "tail": "2"
+    },
+    {
+        "head": "Badminton",
+        "type": "has part",
+        "tail": "1 mixed"
+    },
+    {
+        "head": "2",
+        "type": "sport",
+        "tail": "Badminton"
+    },
+    {
+        "head": "1 mixed",
+        "type": "sport",
+        "tail": "Badminton"
+    },
+    {
+        "head": "Rhythmic gymnastics",
+        "type": "has part",
+        "tail": "women"
+    },
+    {
+        "head": "women",
+        "type": "subclass of",
+        "tail": "Rhythmic gymnastics"
+    },
+    {
+        "head": "Para badminton",
+        "type": "number of participants",
+        "tail": "16"
+    },
+    {
+        "head": "Para powerlifting",
+        "type": "number of participants",
+        "tail": "20"
+    },
+    {
+        "head": "Porte de la Chapelle Arena",
+        "type": "sport",
+        "tail": "Badminton"
+    },
+    {
+        "head": "Rhythmic gymnastics",
+        "type": "subclass of",
+        "tail": "Gymnastics"
+    },
+    {
+        "head": "Aquatics Centre",
+        "type": "located in",
+        "tail": "Saint-Denis"
+    },
+    {
+        "head": "artistic swimming",
+        "type": "location",
+        "tail": "Aquatics Centre"
+    },
+    {
+        "head": "water polo",
+        "type": "location",
+        "tail": "Aquatics Centre"
+    },
+    {
+        "head": "diving",
+        "type": "location",
+        "tail": "Aquatics Centre"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "location",
+        "tail": "Aquatics Centre"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "Artistic swimming",
+        "type": "has part",
+        "tail": "2 events"
+    },
+    {
+        "head": "2 events",
+        "type": "part of",
+        "tail": "Artistic swimming"
+    },
+    {
+        "head": "2 events",
+        "type": "sport",
+        "tail": "Water polo"
+    },
+    {
+        "head": "1 for men",
+        "type": "sport",
+        "tail": "Water polo"
+    },
+    {
+        "head": "1 for women",
+        "type": "sport",
+        "tail": "Water polo"
+    },
+    {
+        "head": "4 for men",
+        "type": "sport",
+        "tail": "Water polo"
+    },
+    {
+        "head": "4 for women",
+        "type": "sport",
+        "tail": "Water polo"
+    },
+    {
+        "head": "Artistic swimming",
+        "type": "subclass of",
+        "tail": "Sport"
+    },
+    {
+        "head": "Aquatics Centre",
+        "type": "sport",
+        "tail": "Water polo"
+    },
+    {
+        "head": "Aquatics Centre",
+        "type": "sport",
+        "tail": "Diving"
+    },
+    {
+        "head": "Paris 2024",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "eventing",
+        "type": "has part",
+        "tail": "jumping"
+    },
+    {
+        "head": "Olympic Games",
+        "type": "has part",
+        "tail": "dressage"
+    },
+    {
+        "head": "Olympic Games",
+        "type": "has part",
+        "tail": "eventing"
+    },
+    {
+        "head": "Olympic Games",
+        "type": "has part",
+        "tail": "jumping"
+    },
+    {
+        "head": "dressage",
+        "type": "part of",
+        "tail": "Olympic Games"
+    },
+    {
+        "head": "eventing",
+        "type": "part of",
+        "tail": "Olympic Games"
+    },
+    {
+        "head": "jumping",
+        "type": "part of",
+        "tail": "Olympic Games"
+    },
+    {
+        "head": "para equestrian events",
+        "type": "part of",
+        "tail": "Paralympic Games"
+    },
+    {
+        "head": "Dressage",
+        "type": "subclass of",
+        "tail": "Equestrian"
+    },
+    {
+        "head": "Eventing",
+        "type": "subclass of",
+        "tail": "Equestrian"
+    },
+    {
+        "head": "Jumping",
+        "type": "part of",
+        "tail": "Equestrian"
+    },
+    {
+        "head": "Equestrian",
+        "type": "has part",
+        "tail": "Jumping"
+    },
+    {
+        "head": "Paris 2024",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Centre-Val de Loire",
+        "type": "instance of",
+        "tail": "region"
+    },
+    {
+        "head": "10m air rifle",
+        "type": "sport",
+        "tail": "shooting"
+    },
+    {
+        "head": "50m rifle",
+        "type": "sport",
+        "tail": "shooting"
+    },
+    {
+        "head": "25m pistol",
+        "type": "sport",
+        "tail": "shooting"
+    },
+    {
+        "head": "Paralympic Games",
+        "type": "has part",
+        "tail": "shooting Para sport"
+    },
+    {
+        "head": "shooting Para sport",
+        "type": "part of",
+        "tail": "Paralympic Games"
+    },
+    {
+        "head": "Châteauroux National Shooting Centre",
+        "type": "sport",
+        "tail": "Shooting"
+    },
+    {
+        "head": "National Shooting Centre",
+        "type": "located in",
+        "tail": "Châteauroux"
+    },
+    {
+        "head": "Paris 2024 Paralympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "Clichy-sous-Bois",
+        "type": "length",
+        "tail": "13.9"
+    },
+    {
+        "head": "men",
+        "type": "number of participants",
+        "tail": "26"
+    },
+    {
+        "head": "women",
+        "type": "number of participants",
+        "tail": "26"
+    },
+    {
+        "head": "Para cycling road events",
+        "type": "subclass of",
+        "tail": "Para cycling"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic and Paralympic Village",
+        "type": "located in",
+        "tail": "Saint-Quentin-en-Yvelines"
+    },
+    {
+        "head": "Mountain biking",
+        "type": "has part",
+        "tail": "cross-country"
+    },
+    {
+        "head": "cross-country",
+        "type": "subclass of",
+        "tail": "Mountain biking"
+    },
+    {
+        "head": "Mountain biking",
+        "type": "sport",
+        "tail": "Cycling"
+    },
+    {
+        "head": "Cycling",
+        "type": "has part",
+        "tail": "Mountain biking"
+    },
+    {
+        "head": "Golf National",
+        "type": "located in",
+        "tail": "Saint-Quentin-en-Yvelines"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "stroke play",
+        "type": "sport",
+        "tail": "Golf"
+    },
+    {
+        "head": "Golf National",
+        "type": "sport",
+        "tail": "Golf"
+    },
+    {
+        "head": "fencing",
+        "type": "part of",
+        "tail": "2024 Olympic Games"
+    },
+    {
+        "head": "fencing",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "taekwondo",
+        "type": "part of",
+        "tail": "2024 Olympic Games"
+    },
+    {
+        "head": "taekwondo",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "2024 Olympic Games",
+        "type": "has part",
+        "tail": "fencing"
+    },
+    {
+        "head": "2024 Olympic Games",
+        "type": "has part",
+        "tail": "taekwondo"
+    },
+    {
+        "head": "2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "located in",
+        "tail": "8th arrondissement of Paris"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "located in",
+        "tail": "8th arrondissement of Paris"
+    },
+    {
+        "head": "foil",
+        "type": "sport",
+        "tail": "Fencing"
+    },
+    {
+        "head": "épée",
+        "type": "sport",
+        "tail": "Fencing"
+    },
+    {
+        "head": "sabre",
+        "type": "sport",
+        "tail": "Fencing"
+    },
+    {
+        "head": "Taekwondo",
+        "type": "number of participants",
+        "tail": "8"
+    },
+    {
+        "head": "Wheelchair fencing",
+        "type": "number of participants",
+        "tail": "16"
+    },
+    {
+        "head": "Para taekwondo",
+        "type": "sport",
+        "tail": "taekwondo"
+    },
+    {
+        "head": "Fencing",
+        "type": "subclass of",
+        "tail": "Combat Sports"
+    },
+    {
+        "head": "Taekwondo",
+        "type": "subclass of",
+        "tail": "Combat Sports"
+    },
+    {
+        "head": "Wheelchair fencing",
+        "type": "subclass of",
+        "tail": "Para Combat Sports"
+    },
+    {
+        "head": "Para taekwondo",
+        "type": "subclass of",
+        "tail": "Para Combat Sports"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "located in",
+        "tail": "4th arrondissement of Paris"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "located in",
+        "tail": "4th arrondissement of Paris"
+    },
+    {
+        "head": "marathon",
+        "type": "has part",
+        "tail": "1"
+    },
+    {
+        "head": "Marathon",
+        "type": "sport",
+        "tail": "Athletics"
+    },
+    {
+        "head": "archery",
+        "type": "part of",
+        "tail": "2024 Olympic and Paralympic Games"
+    },
+    {
+        "head": "Para archery",
+        "type": "part of",
+        "tail": "2024 Olympic and Paralympic Games"
+    },
+    {
+        "head": "cycling time trial",
+        "type": "part of",
+        "tail": "2024 Olympic and Paralympic Games"
+    },
+    {
+        "head": "marathon",
+        "type": "part of",
+        "tail": "2024 Olympic and Paralympic Games"
+    },
+    {
+        "head": "2024 Olympic and Paralympic Games",
+        "type": "has part",
+        "tail": "archery"
+    },
+    {
+        "head": "2024 Olympic and Paralympic Games",
+        "type": "has part",
+        "tail": "Para archery"
+    },
+    {
+        "head": "2024 Olympic and Paralympic Games",
+        "type": "has part",
+        "tail": "cycling time trial"
+    },
+    {
+        "head": "2024 Olympic and Paralympic Games",
+        "type": "has part",
+        "tail": "marathon"
+    },
+    {
+        "head": "2024 Olympic and Paralympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "located in",
+        "tail": "7th arrondissement of Paris"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "located in",
+        "tail": "7th arrondissement of Paris"
+    },
+    {
+        "head": "Archery",
+        "type": "subclass of",
+        "tail": "5 events"
+    },
+    {
+        "head": "Para archery",
+        "type": "sport",
+        "tail": "archery"
+    },
+    {
+        "head": "marathon",
+        "type": "has part",
+        "tail": "Cycling time trial"
+    },
+    {
+        "head": "Archery",
+        "type": "subclass of",
+        "tail": "Precision Sports"
+    },
+    {
+        "head": "Para archery",
+        "type": "subclass of",
+        "tail": "Sport"
+    },
+    {
+        "head": "Sport",
+        "type": "has part",
+        "tail": "Para archery"
+    },
+    {
+        "head": "Cycling time trial",
+        "type": "sport",
+        "tail": "Cycling"
+    },
+    {
+        "head": "Marathon",
+        "type": "sport",
+        "tail": "Athletics"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "located in",
+        "tail": "8th arrondissement of Paris"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "located in",
+        "tail": "8th arrondissement of Paris"
+    },
+    {
+        "head": "BMX freestyle",
+        "type": "sport",
+        "tail": "skateboarding"
+    },
+    {
+        "head": "Skateboarding",
+        "type": "subclass of",
+        "tail": "Sport"
+    },
+    {
+        "head": "BMX freestyle",
+        "type": "sport",
+        "tail": "Cycling"
+    },
+    {
+        "head": "3x3 Basketball",
+        "type": "subclass of",
+        "tail": "Sport"
+    },
+    {
+        "head": "Breaking",
+        "type": "subclass of",
+        "tail": "Sport"
+    },
+    {
+        "head": "Dance",
+        "type": "subclass of",
+        "tail": "Sport"
+    },
+    {
+        "head": "Parc Georges-Valbon",
+        "type": "located in",
+        "tail": "La Courneuve"
+    },
+    {
+        "head": "Paris 2024 Paralympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "Paralympic marathon",
+        "type": "has part",
+        "tail": "3 events"
+    },
+    {
+        "head": "Paralympic marathon",
+        "type": "has part",
+        "tail": "1 for men"
+    },
+    {
+        "head": "Paralympic marathon",
+        "type": "has part",
+        "tail": "1 for women"
+    },
+    {
+        "head": "Paralympic marathon",
+        "type": "has part",
+        "tail": "1 mixed"
+    },
+    {
+        "head": "3 events",
+        "type": "subclass of",
+        "tail": "Paralympic marathon"
+    },
+    {
+        "head": "1 for men",
+        "type": "subclass of",
+        "tail": "Paralympic marathon"
+    },
+    {
+        "head": "1 for women",
+        "type": "subclass of",
+        "tail": "Paralympic marathon"
+    },
+    {
+        "head": "1 mixed",
+        "type": "subclass of",
+        "tail": "Paralympic marathon"
+    },
+    {
+        "head": "Paralympic Marathon",
+        "type": "location",
+        "tail": "Parc Georges-Valbon"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "city centre",
+        "type": "located in",
+        "tail": "Marseille"
+    },
+    {
+        "head": "windsurfing",
+        "type": "sport",
+        "tail": "Sailing"
+    },
+    {
+        "head": "dinghy",
+        "type": "sport",
+        "tail": "Sailing"
+    },
+    {
+        "head": "skiff",
+        "type": "sport",
+        "tail": "Sailing"
+    },
+    {
+        "head": "kiteboarding",
+        "type": "sport",
+        "tail": "Sailing"
+    },
+    {
+        "head": "Marseille Marina",
+        "type": "sport",
+        "tail": "Sailing"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "located in",
+        "tail": "16th arrondissement of Paris"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "located in",
+        "tail": "16th arrondissement of Paris"
+    },
+    {
+        "head": "tournament for men",
+        "type": "number of participants",
+        "tail": "16"
+    },
+    {
+        "head": "tournament for women",
+        "type": "number of participants",
+        "tail": "12"
+    },
+    {
+        "head": "Parc des Princes",
+        "type": "sport",
+        "tail": "Football"
+    },
+    {
+        "head": "Paris La Défense Arena",
+        "type": "located in",
+        "tail": "Nanterre"
+    },
+    {
+        "head": "Nanterre",
+        "type": "owner of",
+        "tail": "Paris La Défense Arena"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "location",
+        "tail": "Paris La Défense Arena"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "Swimming",
+        "type": "has part",
+        "tail": "35 events"
+    },
+    {
+        "head": "35 events",
+        "type": "sport",
+        "tail": "Swimming"
+    },
+    {
+        "head": "Water polo",
+        "type": "has part",
+        "tail": "1"
+    },
+    {
+        "head": "Water polo",
+        "type": "has part",
+        "tail": "women"
+    },
+    {
+        "head": "1",
+        "type": "sport",
+        "tail": "Water polo"
+    },
+    {
+        "head": "women",
+        "type": "sport",
+        "tail": "Water polo"
+    },
+    {
+        "head": "Para swimming",
+        "type": "has part",
+        "tail": "141 events"
+    },
+    {
+        "head": "141 events",
+        "type": "sport",
+        "tail": "Para swimming"
+    },
+    {
+        "head": "Swimming",
+        "type": "subclass of",
+        "tail": "Aquatic Sports"
+    },
+    {
+        "head": "Aquatic Sports",
+        "type": "has part",
+        "tail": "Swimming"
+    },
+    {
+        "head": "La Défense Arena",
+        "type": "sport",
+        "tail": "Water polo"
+    },
+    {
+        "head": "La Défense Arena",
+        "type": "location",
+        "tail": "Paris"
+    },
+    {
+        "head": "Paris 2024 Olympic and Paralympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "location",
+        "tail": "Paris"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "located in",
+        "tail": "Paris"
+    },
+    {
+        "head": "Triathlon",
+        "type": "has part",
+        "tail": "1 for men"
+    },
+    {
+        "head": "Triathlon",
+        "type": "has part",
+        "tail": "1 for women"
+    },
+    {
+        "head": "Triathlon",
+        "type": "has part",
+        "tail": "1 mixed"
+    },
+    {
+        "head": "1 for men",
+        "type": "sport",
+        "tail": "Triathlon"
+    },
+    {
+        "head": "1 for women",
+        "type": "sport",
+        "tail": "Triathlon"
+    },
+    {
+        "head": "1 mixed",
+        "type": "sport",
+        "tail": "Triathlon"
+    },
+    {
+        "head": "Para triathlon",
+        "type": "sport",
+        "tail": "triathlon"
+    },
+    {
+        "head": "time trial",
+        "type": "subclass of",
+        "tail": "Road cycling"
+    },
+    {
+        "head": "Triathlon",
+        "type": "sport",
+        "tail": "Athletics"
+    },
+    {
+        "head": "Athletics",
+        "type": "has part",
+        "tail": "Triathlon"
+    },
+    {
+        "head": "Para triathlon",
+        "type": "subclass of",
+        "tail": "Para Athletics"
+    },
+    {
+        "head": "Road cycling",
+        "type": "subclass of",
+        "tail": "Cycling"
+    },
+    {
+        "head": "Marathon swimming",
+        "type": "sport",
+        "tail": "Aquatic Sports"
+    },
+    {
+        "head": "Aquatic Sports",
+        "type": "subclass of",
+        "tail": "Sport"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "Sport climbing",
+        "type": "has part",
+        "tail": "bouldering"
+    },
+    {
+        "head": "Sport climbing",
+        "type": "has part",
+        "tail": "speed"
+    },
+    {
+        "head": "bouldering",
+        "type": "subclass of",
+        "tail": "Sport climbing"
+    },
+    {
+        "head": "speed",
+        "type": "subclass of",
+        "tail": "Sport climbing"
+    },
+    {
+        "head": "Sport Climbing",
+        "type": "sport",
+        "tail": "Climbing"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "BMX racing",
+        "type": "subclass of",
+        "tail": "2 events"
+    },
+    {
+        "head": "BMX Racing",
+        "type": "sport",
+        "tail": "Cycling"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "tramway",
+        "type": "located in",
+        "tail": "Bordeaux-Lac"
+    },
+    {
+        "head": "tournament for men",
+        "type": "number of participants",
+        "tail": "16"
+    },
+    {
+        "head": "tournament for women",
+        "type": "number of participants",
+        "tail": "12"
+    },
+    {
+        "head": "Bordeaux Stadium",
+        "type": "sport",
+        "tail": "Football"
+    },
+    {
+        "head": "athletics",
+        "type": "location",
+        "tail": "Stade de France"
+    },
+    {
+        "head": "athletics",
+        "type": "part of",
+        "tail": "Paris 2024 Olympic Games"
+    },
+    {
+        "head": "rugby",
+        "type": "location",
+        "tail": "Stade de France"
+    },
+    {
+        "head": "rugby",
+        "type": "part of",
+        "tail": "Paris 2024 Olympic Games"
+    },
+    {
+        "head": "rugby",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "has part",
+        "tail": "athletics"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "has part",
+        "tail": "rugby"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Para athletics",
+        "type": "part of",
+        "tail": "Paralympic Games"
+    },
+    {
+        "head": "Paralympic Games",
+        "type": "has part",
+        "tail": "Para athletics"
+    },
+    {
+        "head": "Olympic",
+        "type": "located in",
+        "tail": "Saint-Denis"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "located in",
+        "tail": "Saint-Denis"
+    },
+    {
+        "head": "Athletics",
+        "type": "has part",
+        "tail": "events"
+    },
+    {
+        "head": "events",
+        "type": "part of",
+        "tail": "Athletics"
+    },
+    {
+        "head": "Rugby",
+        "type": "has part",
+        "tail": "1"
+    },
+    {
+        "head": "Rugby",
+        "type": "has part",
+        "tail": "women"
+    },
+    {
+        "head": "1",
+        "type": "sport",
+        "tail": "Rugby"
+    },
+    {
+        "head": "1",
+        "type": "sports league level",
+        "tail": "1"
+    },
+    {
+        "head": "Para athletics",
+        "type": "subclass of",
+        "tail": "events"
+    },
+    {
+        "head": "Athletics",
+        "type": "has part",
+        "tail": "Track and Field"
+    },
+    {
+        "head": "Track and Field",
+        "type": "subclass of",
+        "tail": "Athletics"
+    },
+    {
+        "head": "Stade de France",
+        "type": "sport",
+        "tail": "Rugby"
+    },
+    {
+        "head": "Para Athletics",
+        "type": "has part",
+        "tail": "Para Track and Field"
+    },
+    {
+        "head": "Para Track and Field",
+        "type": "subclass of",
+        "tail": "Para Athletics"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Lyon",
+        "type": "shares border with",
+        "tail": "Décines"
+    },
+    {
+        "head": "tournament for men",
+        "type": "number of participants",
+        "tail": "16"
+    },
+    {
+        "head": "tournament for women",
+        "type": "number of participants",
+        "tail": "12"
+    },
+    {
+        "head": "Lyon Stadium",
+        "type": "sport",
+        "tail": "Football"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Metro",
+        "type": "located in",
+        "tail": "Marseille"
+    },
+    {
+        "head": "tournament for men",
+        "type": "number of participants",
+        "tail": "16"
+    },
+    {
+        "head": "tournament for women",
+        "type": "number of participants",
+        "tail": "12"
+    },
+    {
+        "head": "Marseille Stadium",
+        "type": "sport",
+        "tail": "Football"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "tramway",
+        "type": "located in",
+        "tail": "Nantes"
+    },
+    {
+        "head": "tournament for men",
+        "type": "number of participants",
+        "tail": "16"
+    },
+    {
+        "head": "tournament for women",
+        "type": "number of participants",
+        "tail": "12"
+    },
+    {
+        "head": "Nantes Stadium",
+        "type": "sport",
+        "tail": "Football"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "tramway",
+        "type": "located in",
+        "tail": "Nice"
+    },
+    {
+        "head": "tournament for men",
+        "type": "number of participants",
+        "tail": "16"
+    },
+    {
+        "head": "tournament for women",
+        "type": "number of participants",
+        "tail": "12"
+    },
+    {
+        "head": "Nice Stadium",
+        "type": "sport",
+        "tail": "Football"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "tramway",
+        "type": "located in",
+        "tail": "Saint-Étienne"
+    },
+    {
+        "head": "tournament for men",
+        "type": "number of participants",
+        "tail": "16"
+    },
+    {
+        "head": "tournament for women",
+        "type": "number of participants",
+        "tail": "12"
+    },
+    {
+        "head": "Saint-Étienne Stadium",
+        "type": "sport",
+        "tail": "Football"
+    },
+    {
+        "head": "Vaires-sur-Marne Nautical Stadium",
+        "type": "occupant",
+        "tail": "2024 Olympic and Paralympic Games"
+    },
+    {
+        "head": "2024 Olympic and Paralympic Games",
+        "type": "location",
+        "tail": "Vaires-sur-Marne Nautical Stadium"
+    },
+    {
+        "head": "2024 Olympic and Paralympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "Rowing",
+        "type": "has part",
+        "tail": "events"
+    },
+    {
+        "head": "events",
+        "type": "part of",
+        "tail": "Rowing"
+    },
+    {
+        "head": "Canoe sprint",
+        "type": "number of participants",
+        "tail": "10"
+    },
+    {
+        "head": "Canoe slalom",
+        "type": "number of participants",
+        "tail": "6"
+    },
+    {
+        "head": "Para rowing",
+        "type": "sport",
+        "tail": "rowing"
+    },
+    {
+        "head": "Para canoe",
+        "type": "number of participants",
+        "tail": "10"
+    },
+    {
+        "head": "Vaires-sur-Marne Nautical Stadium",
+        "type": "sport",
+        "tail": "Rowing"
+    },
+    {
+        "head": "Nautical Stadium",
+        "type": "located in",
+        "tail": "Vaires-sur-Marne"
+    },
+    {
+        "head": "Vaires-sur-Marne Nautical Stadium",
+        "type": "sport",
+        "tail": "Canoe Slalom"
+    },
+    {
+        "head": "Vaires-sur-Marne Nautical Stadium",
+        "type": "sport",
+        "tail": "Para Rowing"
+    },
+    {
+        "head": "Vaires-sur-Marne Nautical Stadium",
+        "type": "located in",
+        "tail": "Vaires-sur-Marne"
+    },
+    {
+        "head": "basketball",
+        "type": "location",
+        "tail": "Pierre Mauroy Stadium"
+    },
+    {
+        "head": "basketball",
+        "type": "part of",
+        "tail": "Paris 2024 Olympic Games"
+    },
+    {
+        "head": "handball",
+        "type": "location",
+        "tail": "Pierre Mauroy Stadium"
+    },
+    {
+        "head": "handball",
+        "type": "part of",
+        "tail": "Paris 2024 Olympic Games"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "location",
+        "tail": "Pierre Mauroy Stadium"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "has part",
+        "tail": "basketball"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "has part",
+        "tail": "handball"
+    },
+    {
+        "head": "Metro",
+        "type": "located in",
+        "tail": "Lille"
+    },
+    {
+        "head": "Basketball",
+        "type": "has part",
+        "tail": "1"
+    },
+    {
+        "head": "Basketball",
+        "type": "has part",
+        "tail": "women"
+    },
+    {
+        "head": "1",
+        "type": "sport",
+        "tail": "Basketball"
+    },
+    {
+        "head": "women",
+        "type": "sport",
+        "tail": "Basketball"
+    },
+    {
+        "head": "Handball",
+        "type": "has part",
+        "tail": "1"
+    },
+    {
+        "head": "1",
+        "type": "sport",
+        "tail": "Handball"
+    },
+    {
+        "head": "Pierre Mauroy Stadium",
+        "type": "sport",
+        "tail": "Basketball"
+    },
+    {
+        "head": "Pierre Mauroy Stadium",
+        "type": "sport",
+        "tail": "Handball"
+    },
+    {
+        "head": "Paris 2024 Olympic and Paralympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "Tennis",
+        "type": "has part",
+        "tail": "events"
+    },
+    {
+        "head": "events",
+        "type": "part of",
+        "tail": "Tennis"
+    },
+    {
+        "head": "Wheelchair tennis",
+        "type": "number of participants",
+        "tail": "6"
+    },
+    {
+        "head": "women",
+        "type": "sport",
+        "tail": "Boxing"
+    },
+    {
+        "head": "men",
+        "type": "sport",
+        "tail": "Boxing"
+    },
+    {
+        "head": "Tennis",
+        "type": "has part",
+        "tail": "Racquet Sports"
+    },
+    {
+        "head": "Racquet Sports",
+        "type": "part of",
+        "tail": "Tennis"
+    },
+    {
+        "head": "Roland-Garros Stadium",
+        "type": "sport",
+        "tail": "Tennis"
+    },
+    {
+        "head": "Wheelchair Tennis",
+        "type": "sport",
+        "tail": "Para Racquet Sports"
+    },
+    {
+        "head": "Para Racquet Sports",
+        "type": "has part",
+        "tail": "Wheelchair Tennis"
+    },
+    {
+        "head": "Roland-Garros Stadium",
+        "type": "sport",
+        "tail": "Boxing"
+    },
+    {
+        "head": "Paris 2024 Olympic and Paralympic Games",
+        "type": "location",
+        "tail": "Eiffel Tower Stadium"
+    },
+    {
+        "head": "Paris 2024 Olympic and Paralympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Metro",
+        "type": "located in",
+        "tail": "Paris"
+    },
+    {
+        "head": "RER",
+        "type": "located in",
+        "tail": "Paris"
+    },
+    {
+        "head": "Beach volleyball",
+        "type": "number of participants",
+        "tail": "2"
+    },
+    {
+        "head": "Blind football",
+        "type": "number of participants",
+        "tail": "1"
+    },
+    {
+        "head": "Eiffel Tower Stadium",
+        "type": "sport",
+        "tail": "Beach Volleyball"
+    },
+    {
+        "head": "Eiffel Tower Stadium",
+        "type": "sport",
+        "tail": "Blind Football"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "located in",
+        "tail": "Colombes"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "located in",
+        "tail": "Colombes"
+    },
+    {
+        "head": "Hockey",
+        "type": "has part",
+        "tail": "1"
+    },
+    {
+        "head": "Hockey",
+        "type": "has part",
+        "tail": "women"
+    },
+    {
+        "head": "1",
+        "type": "sport",
+        "tail": "Hockey"
+    },
+    {
+        "head": "women",
+        "type": "sport",
+        "tail": "Hockey"
+    },
+    {
+        "head": "Yves-du-Manoir Stadium",
+        "type": "sport",
+        "tail": "Hockey"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Papeete",
+        "type": "area",
+        "tail": "75"
+    },
+    {
+        "head": "Surfing",
+        "type": "uses",
+        "tail": "shortboard"
+    },
+    {
+        "head": "shortboard",
+        "type": "sport",
+        "tail": "Surfing"
+    },
+    {
+        "head": "Surfing",
+        "type": "subclass of",
+        "tail": "Sport"
+    },
+    {
+        "head": "Water Sports",
+        "type": "subclass of",
+        "tail": "Sport"
+    },
+    {
+        "head": "National Velodrome",
+        "type": "located in",
+        "tail": "Saint-Quentin-en-Yvelines"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "Track cycling",
+        "type": "number of participants",
+        "tail": "12"
+    },
+    {
+        "head": "Para cycling",
+        "type": "number of participants",
+        "tail": "17"
+    },
+    {
+        "head": "Track Cycling",
+        "type": "subclass of",
+        "tail": "Cycling"
+    },
+    {
+        "head": "Para Cycling",
+        "type": "location",
+        "tail": "National Velodrome"
+    },
+    {
+        "head": "judo",
+        "type": "location",
+        "tail": "Champ-de-Mars Arena"
+    },
+    {
+        "head": "wrestling",
+        "type": "location",
+        "tail": "Champ-de-Mars Arena"
+    },
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "located in",
+        "tail": "7th arrondissement of Paris"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "located in",
+        "tail": "7th arrondissement of Paris"
+    },
+    {
+        "head": "men",
+        "type": "sport",
+        "tail": "judo"
+    },
+    {
+        "head": "women",
+        "type": "sport",
+        "tail": "judo"
+    },
+    {
+        "head": "freestyle",
+        "type": "subclass of",
+        "tail": "Wrestling"
+    },
+    {
+        "head": "Para judo",
+        "type": "number of participants",
+        "tail": "16"
+    },
+    {
+        "head": "Judo",
+        "type": "subclass of",
+        "tail": "Martial Arts"
+    },
+    {
+        "head": "Wrestling",
+        "type": "subclass of",
+        "tail": "Martial Arts"
+    },
+    {
+        "head": "Para judo",
+        "type": "subclass of",
+        "tail": "Para Martial Arts"
+    },
+    {
+        "head": "Champ-de-Mars Arena",
+        "type": "sport",
+        "tail": "Wheelchair rugby"
+    }
+]

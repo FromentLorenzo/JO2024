@@ -1,0 +1,27 @@
+[
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Metro",
+        "type": "located in",
+        "tail": "Marseille"
+    },
+    {
+        "head": "tournament for men",
+        "type": "number of participants",
+        "tail": "16"
+    },
+    {
+        "head": "tournament for women",
+        "type": "number of participants",
+        "tail": "12"
+    },
+    {
+        "head": "Marseille Stadium",
+        "type": "sport",
+        "tail": "Football"
+    }
+]

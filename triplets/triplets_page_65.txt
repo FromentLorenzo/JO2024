@@ -1,0 +1,72 @@
+[
+    {
+        "head": "Paris 2024 Olympic and Paralympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "has part",
+        "tail": "Paralympic Village"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "part of",
+        "tail": "Olympic"
+    },
+    {
+        "head": "Tennis",
+        "type": "has part",
+        "tail": "events"
+    },
+    {
+        "head": "events",
+        "type": "part of",
+        "tail": "Tennis"
+    },
+    {
+        "head": "Wheelchair tennis",
+        "type": "number of participants",
+        "tail": "6"
+    },
+    {
+        "head": "women",
+        "type": "sport",
+        "tail": "Boxing"
+    },
+    {
+        "head": "men",
+        "type": "sport",
+        "tail": "Boxing"
+    },
+    {
+        "head": "Tennis",
+        "type": "has part",
+        "tail": "Racquet Sports"
+    },
+    {
+        "head": "Racquet Sports",
+        "type": "part of",
+        "tail": "Tennis"
+    },
+    {
+        "head": "Roland-Garros Stadium",
+        "type": "sport",
+        "tail": "Tennis"
+    },
+    {
+        "head": "Wheelchair Tennis",
+        "type": "sport",
+        "tail": "Para Racquet Sports"
+    },
+    {
+        "head": "Para Racquet Sports",
+        "type": "has part",
+        "tail": "Wheelchair Tennis"
+    },
+    {
+        "head": "Roland-Garros Stadium",
+        "type": "sport",
+        "tail": "Boxing"
+    }
+]

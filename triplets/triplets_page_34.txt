@@ -1,0 +1,47 @@
+[
+    {
+        "head": "Paris 2024 Olympic Games",
+        "type": "point in time",
+        "tail": "2024"
+    },
+    {
+        "head": "Olympic",
+        "type": "located in",
+        "tail": "8th arrondissement of Paris"
+    },
+    {
+        "head": "Paralympic Village",
+        "type": "located in",
+        "tail": "8th arrondissement of Paris"
+    },
+    {
+        "head": "BMX freestyle",
+        "type": "sport",
+        "tail": "skateboarding"
+    },
+    {
+        "head": "Skateboarding",
+        "type": "subclass of",
+        "tail": "Sport"
+    },
+    {
+        "head": "BMX freestyle",
+        "type": "sport",
+        "tail": "Cycling"
+    },
+    {
+        "head": "3x3 Basketball",
+        "type": "subclass of",
+        "tail": "Sport"
+    },
+    {
+        "head": "Breaking",
+        "type": "subclass of",
+        "tail": "Sport"
+    },
+    {
+        "head": "Dance",
+        "type": "subclass of",
+        "tail": "Sport"
+    }
+]
