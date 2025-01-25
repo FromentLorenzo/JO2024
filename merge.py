@@ -2,7 +2,7 @@ import os
 import json
 
 # Directory containing the JSON text files
-directory = 'triplets'  # Replace with the actual path to your directory
+directory = 'triplets' 
 output_file = 'triplets/merged.json'
 
 # Initialize a list to hold all the JSON data
