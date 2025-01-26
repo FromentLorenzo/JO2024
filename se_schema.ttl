@@ -15,7 +15,7 @@ se:Athlete a owl:Class ;
     rdfs:label "Athlete";
     rdfs:comment "Un athlète est un participant à une epreuve.";
     rdfs:subClassOf[
-        a owl:Restriction;;
+        a owl:Restriction;
         owl:onProperty se:representsCountry;
         owl:maxCardinality 1;
     ];
