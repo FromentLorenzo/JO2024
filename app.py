@@ -80,11 +80,7 @@ for sport_row in sports_results:
     # Collect athletes for this sport
     athletes_list = []
     for row in athletes_results:
-        athlete_name = str(row['athleteName'])
-        country_name = str(row['countryLabel'])
-        event_name = str(row['eventLabel'])
-        medal_name = str(row['medalLabel'])
-        athletes_list.append(f"{athlete_name} ({country_name}) - {event_name} [{medal_name}]")
+        athletes_list.append(row)
 
     # Store the athletes list under the sport's label
     athletes_data[sport_label] = athletes_list
@@ -94,15 +90,18 @@ st.set_page_config(layout="wide")
 st.markdown("<h1 style='text-align: center;'>Sports and Athletes</h1>", unsafe_allow_html=True)
 
 # Placeholder function triggered when an athlete's name is clicked
-def on_athlete_click(name):
-    st.write(f"Function triggered for: {name}")  # Placeholder functionality
+def on_athlete_click(row):
+    # QUERY THE GUARDIAN
+    st.write(f"Country: {str(row['countryLabel'])}") 
+    st.write(f"Event: {str(row['eventLabel'])}") 
+    st.write(f"Medal: {str(row['medalLabel'])}") 
 
 # Function to display athletes based on the selected sport
 def display_athletes(sport):
     athletes = athletes_data.get(sport, [])
     if athletes:
         for index, athlete in enumerate(athletes):  # Use index to ensure unique keys
-            if st.button(athlete, key=f"{sport}_{index}"):
+            if st.button(str(athlete['athleteName']), key=f"{sport}_{index}"):
                 on_athlete_click(athlete)
     else:
         st.write("No athletes found for this sport.")
