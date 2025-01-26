@@ -1,0 +1,1033 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix se: <http://example.org/olympics2024/schema#> .
+@prefix sse: <http://example.org/olympics2024/skos#> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+
+# Sports
+
+se:Athletisme a se:Sport ;
+    rdfs:label "Athletisme" ;
+    rdfs:comment "L'athlétisme est une epreuve sportive qui regroupe des épreuves de course, de saut et de lancer.";
+    se:epreuve se:Lancer_de_javelot, se:200m, se:800m .
+
+se:Natation a se:Sport ;
+    rdfs:label "Natation" ;
+    rdfs:comment "La natation est une epreuve sportive qui regroupe des épreuves de nage.";
+    se:epreuve se:100m_Nage_Libre .
+
+se:Plongeon a se:Sport ;
+    rdfs:label "Plongeon" ;
+    rdfs:comment "Le plongeon est une epreuve sportive qui regroupe des épreuves de saut dans l'eau.";
+    se:epreuve se:Plongeon_10m .
+
+se:Sport_Collectif a se:Sport ;
+    rdfs:label "Sport Collectif" ;
+    rdfs:comment "Les sports collectifs sont des epreuves sportives qui regroupent des épreuves d'équipe.";
+    se:epreuve se:Basketball, se:Beach_Volley .
+
+# Venues 
+
+se:Stade_de_France a se:Venue ;
+    rdfs:label "Stade de France" ;
+    rdfs:comment "Le Stade de France est un stade situé à Saint-Denis, en France.";
+    se:infrastructureType sse:OlympicStadium .
+
+se:Defense_Arena a se:Venue ;
+    rdfs:label "Defense Arena" ;
+    rdfs:comment "La Defense Arena est une salle située à Nanterre, en France." ;
+    se:infrastructureType sse:GymnasticsHalls, sse:BasketballHalls.
+
+se:Centre_aquatique_olympique a se:Venue ;
+    rdfs:label "Centre aquatique olympique" ;
+    rdfs:comment "Le Centre aquatique olympique est une piscine située à Saint-Denis, en France.";
+    se:infrastructureType sse:Pools .
+
+se:Stage_Pierre_Mauroy a se:Venue ;
+    rdfs:label "Stage Pierre Mauroy" ;
+    rdfs:comment "Le Stage Pierre Mauroy est une salle située à Villeneuve-d'Ascq, en France." .
+
+se:Tour_Eiffel a se:Venue ;
+    rdfs:label "Tour Eiffel" ;
+    rdfs:comment "La Tour Eiffel est une tour située à Paris, en France." .
+
+# Countries
+
+se:New_Zealand a se:Country ;
+    rdfs:label "New Zealand" ;
+    rdfs:comment "New Zealand is a country in the southwestern Pacific Ocean.".
+
+se:United_States a se:Country ;
+    rdfs:label "United States" ;
+    rdfs:comment "The United States of America is a country in North America." ;
+    se:isRepresentedBy se:basketball_Team_USA_final.
+
+se:Sweden a se:Country ;
+    rdfs:label "Sweden" ;
+    rdfs:comment "Sweden is a country in Northern Europe." ;
+    se:isRepresentedBy se:beach_volley_Team_Sweden_final.
+
+se:Qatar a se:Country ;
+    rdfs:label "Qatar" ;
+    rdfs:comment "Qatar is a country in the Middle East.".
+
+se:France a se:Country ;
+    rdfs:label "France" ;
+    rdfs:comment "France is a country in Western Europe.";
+    se:isRepresentedBy se:basketball_Team_France_final, se:Zeze_Ryan.
+
+se:Japan a se:Country ;
+    rdfs:label "Japan" ;
+    rdfs:comment "Japan is a country in East Asia.";
+    se:isRepresentedBy se:KITAGUCHI_Haruka.
+
+se:China a se:Country ;
+    rdfs:label "China" ;
+    rdfs:comment "China is a country in East Asia.";
+    se:isRepresentedBy se:Quan_Hongchan, se:Chen_Yuxi, se:Zhanle_Pan.
+
+se:Australia a se:Country ;
+    rdfs:label "Australia" ;
+    rdfs:comment "Australia is a country in Oceania." ;
+    se:isRepresentedBy se:Kyle_Chalmers, se:Law_Calab.
+
+se:Brazil a se:Country ; 
+    rdfs:label "Brazil" ;
+    rdfs:comment "Brazil is a country in South America." .
+
+se:Germany a se:Country ;
+    rdfs:label "Germany" ;
+    rdfs:comment "Germany is a country in Central Europe.";
+    se:isRepresentedBy se:beach_volley_Team_Germany_final.
+
+se:Italy a se:Country ;
+    rdfs:label "Italy" ;
+    rdfs:comment "Italy is a country in Southern Europe.";
+    se:isRepresentedBy se:Desalu_Eseosa_Fostine.
+
+se:Russia a se:Country ; 
+    rdfs:label "Russia" ;
+    rdfs:comment "Russia is a country in Eastern Europe." .
+
+
+se:South_Africa a se:Country ;
+    rdfs:label "South Africa" ;
+    rdfs:comment "South Africa is a country in Southern Africa." ;
+    se:isRepresentedBy se:van_DYK_Jo_Ane, se:van_Niekerk_Wayde.
+
+se:Suisse a se:Country ;
+    rdfs:label "Suisse" ;
+    rdfs:comment "La Suisse est un pays d'Europe centrale." ;
+    se:isRepresentedBy se:Svensson_Felix.
+
+se:Poland a se:Country ;
+    rdfs:label "Poland" ;
+    rdfs:comment "Poland is a country in Central Europe." ;
+    se:isRepresentedBy se:Komanski_Albert.
+
+se:Cote_d_Ivoire a se:Country ;
+    rdfs:label "Cote d'Ivoire" ;
+    rdfs:comment "Cote d'Ivoire is a country in West Africa." ;
+    se:isRepresentedBy se:Traore_Cheickna.
+
+se:South_Korea a se:Country ;
+    rdfs:label "South Korea" ;
+    rdfs:comment "South Korea is a country in East Asia." .
+
+se:Spain a se:Country ;
+    rdfs:label "Spain" ;
+    rdfs:comment "Spain is a country in Southern Europe." .
+
+se:Romania a se:Country ;
+    rdfs:label "Romania" ;
+    rdfs:comment "Romania is a country in Eastern Europe." ;
+    se:isRepresentedBy se:David_Popovici.
+
+se:Tchéquie a se:Country ;
+    rdfs:label "Tchéquie" ;
+    rdfs:comment "La Tchéquie est un pays d'Europe centrale." ;
+    se:isRepresentedBy se:seRODNIKOVA_Nikola.
+
+se:République_Populaire_Démocratique_de_Corée a se:Country ;
+    rdfs:label "République Populaire Démocratique de Corée" ;
+    rdfs:comment "La République Populaire Démocratique de Corée est un pays d'Asie de l'Est." ;
+    se:isRepresentedBy se:Kim_Mi_Rae.
+
+se:Serbie a se:Country ;
+    rdfs:label "Serbie" ;
+    rdfs:comment "La Serbie est un pays d'Europe du Sud-Est.".
+
+se:Liberia a se:Country ;
+    rdfs:label "Liberia" ;
+    rdfs:comment "Le Liberia est un pays d'Afrique de l'Ouest.";
+    se:isRepresentedBy se:Fahnbulleh_Joseph.
+
+se:Jamaica a se:Country ;
+    rdfs:label "Jamaica" ;
+    rdfs:comment "Jamaica is an island country in the Caribbean Sea." ;
+    se:isRepresentedBy se:Usain_Bolt.
+
+se:Kenya a se:Country ;
+    rdfs:label "Kenya" ;
+    rdfs:comment "Kenya is a country in East Africa." ;
+    se:isRepresentedBy se:Emmanuel_Wanyonyi, se:David_Rudisha.
+
+se:Canada a se:Country ;
+    rdfs:label "Canada" ;
+    rdfs:comment "Canada is a country in North America." ;
+    se:isRepresentedBy se:Marco_Arop.
+
+se:Algeria a se:Country ;
+    rdfs:label "Algeria" ;
+    rdfs:comment "Algeria is a country in North Africa." ;
+    se:isRepresentedBy se:Jamel_Sedjati.
+
+
+# Athletes
+
+se:Zhanle_Pan a se:Athlete ;
+    rdfs:label "Zhanle Pan" ;
+    rdfs:comment "Zhanle Pan est un athlète chinois spécialisé dans le 100m nage libre";
+    se:name "Zhanle Pan";
+    se:representsCountry se:China;
+    se:birthDate "12/02/1999";
+    se:sexe "M".
+
+se:Kyle_Chalmers a se:Athlete ;
+    rdfs:label "Kyle Chalmers" ;
+    rdfs:comment "Kyle Chalmers est un nageur australien spécialisé dans le 100m nage libre.";
+    se:name "Kyle Chalmers";
+    se:representsCountry se:Australia;
+    se:birthDate "25/06/1998";
+    se:sexe "M".
+
+se:David_Popovici a se:Athlete ;
+    rdfs:label "David Popovici" ;
+    rdfs:comment "David Popovici est un nageur roumain spécialisé dans le 100m nage libre.";
+    se:name "David Popovici";
+    se:representsCountry se:Romania;
+    se:birthDate "17/12/2003";
+    se:sexe "M".
+
+se:KITAGUCHI_Haruka a se:Athlete ;
+    rdfs:label "KITAGUCHI Haruka" ;
+    rdfs:comment "KITAGUCHI Haruka est une lanceuse de javelot japonaise.";
+    se:name "KITAGUCHI Haruka";
+    se:representsCountry se:Japan;
+    se:birthDate "25/06/1998";
+    se:sexe "F".
+
+se:van_DYK_Jo_Ane a se:Athlete ;
+    rdfs:label "van DYK Jo-Ane" ;
+    rdfs:comment "van DYK Jo-Ane est une lanceuse de javelot sud-africaine.";
+    se:name "van DYK Jo-Ane";
+    se:representsCountry se:South_Africa;
+    se:birthDate "03/10/1997";
+    se:sexe "F".
+
+se:seRODNIKOVA_Nikola a se:Athlete ;
+    rdfs:label "seRODNIKOVA Nikola" ;
+    rdfs:comment "seRODNIKOVA Nikola est une lanceuse de javelot tcheque.";
+    se:name "seRODNIKOVA Nikola";
+    se:representsCountry se:Tchéquie;
+    se:birthDate "18/08/1990";
+    se:sexe "F". 
+
+se:Quan_Hongchan a se:Athlete ;
+    rdfs:label "Quan Hongchan" ;
+    rdfs:comment "Quan Hongchan est une plongeuse chinoise.";
+    se:name "Quan Hongchan";
+    se:representsCountry se:China;
+    se:birthDate "20/02/2004";
+    se:sexe "F".
+
+se:Chen_Yuxi a se:Athlete ;
+    rdfs:label "Chen Yuxi" ;
+    rdfs:comment "Chen Yuxi est une plongeuse chinoise.";
+    se:name "Chen Yuxi";
+    se:representsCountry se:China;
+    se:birthDate "11/01/2005";
+    se:sexe "F".
+
+se:Kim_Mi_Rae a se:Athlete ;
+    rdfs:label "Kim Mi Rae" ;
+    rdfs:comment "Kim Mi Rae est une pongiste nord-coréenne.";
+    se:name "Kim Mi Rae";
+    se:representsCountry se:République_Populaire_Démocratique_de_Corée;
+    se:birthDate "15/07/2000";
+    se:sexe "F".
+
+
+se:NTILIKINA_Frank a se:Athlete ;
+    rdfs:label "Frank Ntilikina" ;
+    rdfs:comment "Frank Ntilikina est un joueur de basket français, jouant au poste de meneur de jeu." ;
+    se:name "Frank Ntilikina" ;
+    se:representsCountry se:France ;
+    se:sexe "M".
+
+se:BATUM_Nicolas a se:Athlete ;
+    rdfs:label "Nicolas Batum" ;
+    rdfs:comment "Nicolas Batum est un joueur de basket français et capitaine de l'équipe, jouant au poste d'ailier." ;
+    se:name "Nicolas Batum" ;
+    se:representsCountry se:France ;
+    se:sexe "M".
+
+se:ALBICY_Andrew a se:Athlete ;
+    rdfs:label "Andrew Albicy" ;
+    rdfs:comment "Andrew Albicy est un joueur de basket français, jouant au poste de meneur de jeu." ;
+    se:name "Andrew Albicy" ;
+    se:representsCountry se:France ;
+    se:sexe "M".
+
+se:YABUSELE_Guerschon a se:Athlete ;
+    rdfs:label "Guerschon Yabusele" ;
+    rdfs:comment "Guerschon Yabusele est un joueur de basket français, jouant au poste d'ailier fort." ;
+    se:name "Guerschon Yabusele" ;
+    se:representsCountry se:France ;
+    se:sexe "M".
+
+se:CORDINIER_Isaia a se:Athlete ;
+    rdfs:label "Isaia Cordinier" ;
+    rdfs:comment "Isaia Cordinier est un joueur de basket français, jouant au poste de deuxième arrière." ;
+    se:name "Isaia Cordinier" ;
+    se:representsCountry se:France ;
+    se:sexe "M".
+
+se:FOURNIER_Evan a se:Athlete ;
+    rdfs:label "Evan Fournier" ;
+    rdfs:comment "Evan Fournier est un joueur de basket français, jouant au poste de deuxième arrière." ;
+    se:name "Evan Fournier" ;
+    se:representsCountry se:France ;
+    se:sexe "M".
+
+se:de_COLO_Nando a se:Athlete ;
+    rdfs:label "Nando de Colo" ;
+    rdfs:comment "Nando de Colo est un joueur de basket français, jouant au poste de deuxième arrière." ;
+    se:name "Nando de Colo" ;
+    se:representsCountry se:France ;
+    se:sexe "M".
+
+se:LESSORT_Mathias a se:Athlete ;
+    rdfs:label "Mathias Lessort" ;
+    rdfs:comment "Mathias Lessort est un joueur de basket français, jouant au poste de pivot." ;
+    se:name "Mathias Lessort" ;
+    se:representsCountry se:France ;
+    se:sexe "M".
+
+se:GOBERT_Rudy a se:Athlete ;
+    rdfs:label "Rudy Gobert" ;
+    rdfs:comment "Rudy Gobert est un joueur de basket français, jouant au poste de pivot." ;
+    se:name "Rudy Gobert" ;
+    se:representsCountry se:France ;
+    se:sexe "M".
+
+se:WEMBANYAMA_Victor a se:Athlete ;
+    rdfs:label "Victor Wembanyama" ;
+    rdfs:comment "Victor Wembanyama est un joueur de basket français, jouant au poste d'ailier fort." ;
+    se:name "Victor Wembanyama" ;
+    se:representsCountry se:France ;
+    se:sexe "M".
+
+se:STRAZEL_Matthew a se:Athlete ;
+    rdfs:label "Matthew Strazel" ;
+    rdfs:comment "Matthew Strazel est un joueur de basket français, jouant au poste de meneur de jeu." ;
+    se:name "Matthew Strazel" ;
+    se:representsCountry se:France ;
+    se:sexe "M".
+
+se:COULIBALY_Bilal a se:Athlete ;
+    rdfs:label "Bilal Coulibaly" ;
+    rdfs:comment "Bilal Coulibaly est un joueur de basket français, jouant au poste d'ailier." ;
+    se:name "Bilal Coulibaly" ;
+    se:representsCountry se:France ;
+    se:sexe "M".
+
+se:Fahnbulleh_Joseph a se:Athlete ;
+    rdfs:label "Joseph Fahnbulleh" ;
+    rdfs:comment "Joseph Fahnbulleh est un athlète libérien spécialisé dans le 200m.";
+    se:name "Joseph Fahnbulleh";
+    se:representsCountry se:Liberia;
+    se:birthDate "12/02/1999";
+    se:sexe "M".
+
+se:Desalu_Eseosa_Fostine a se:Athlete ;
+    rdfs:label "Desalu Eseosa Fostine" ;
+    rdfs:comment "Desalu Eseosa Fostine est un athlète italien spécialisé dans le 200m.";
+    se:name "Desalu Eseosa Fostine";
+    se:representsCountry se:Italy;
+    se:birthDate "01/02/1999";
+    se:sexe "M".
+
+se:van_Niekerk_Wayde a se:Athlete ;
+    rdfs:label "Wayde van Niekerk" ;
+    rdfs:comment "Wayde van Niekerk est un athlète sud-africain spécialisé dans le 200m.";
+    se:name "Wayde van Niekerk";
+    se:representsCountry se:South_Africa;
+    se:birthDate "15/07/1992";
+    se:sexe "M".
+
+se:Zeze_Ryan a se:Athlete ;
+    rdfs:label "Ryan Zeze" ;
+    rdfs:comment "Ryan Zeze est un athlète français spécialisé dans le 200m.";
+    se:name "Ryan Zeze";
+    se:representsCountry se:France;
+    se:birthDate "12/06/1996";
+    se:sexe "M".
+
+se:Svensson_Felix a se:Athlete ;
+    rdfs:label "Felix Svensson" ;
+    rdfs:comment "Felix Svensson est un athlète Suisse spécialisé dans le 200m.";
+    se:name "Felix Svensson";
+    se:representsCountry se:Suisse;
+    se:birthDate "25/06/1998";
+    se:sexe "M".
+
+se:Traore_Cheickna a se:Athlete ;
+    rdfs:label "Cheickna Traore" ;
+    rdfs:comment "Cheickna Traore est un athlète ivoirien spécialisé dans le 200m.";
+    se:name "Cheickna Traore";
+    se:representsCountry se:Cote_d_Ivoire;
+    se:birthDate "25/06/1998";
+    se:sexe "M".
+
+se:Law_Calab a se:Athlete ;
+    rdfs:label "Calab Law" ;
+    rdfs:comment "Calab Law est un athlète australien spécialisé dans le 200m.";
+    se:name "Calab Law";
+    se:representsCountry se:Australia;
+    se:birthDate "25/06/1998";
+    se:sexe "M".
+
+se:Komanski_Albert a se:Athlete ;
+    rdfs:label "Albert Komanski" ;
+    rdfs:comment "Albert Komanski est un athlète polonais spécialisé dans le 200m.";
+    se:name "Albert Komanski";
+    se:representsCountry se:Poland;
+    se:birthDate "25/06/1998";
+    se:sexe "M".
+
+se:Usain_Bolt a se:Athlete ;
+    rdfs:label "Usain Bolt" ;
+    rdfs:comment "Usain Bolt est un athlète jamaïcain spécialisé dans le 100m.";
+    se:name "Usain Bolt";
+    se:representsCountry se:Jamaica;
+    se:birthDate "21/08/1986";
+    se:sexe "M".
+
+se:Emmanuel_Wanyonyi a se:Athlete ;
+    rdfs:label "Emmanuel Wanyonyi" ;
+    rdfs:comment "Emmanuel Wanyonyi est un athlète kényan spécialisé dans le 800m.";
+    se:name "Emmanuel Wanyonyi";
+    se:representsCountry se:Kenya;
+    se:birthDate "25/06/1998";
+    se:sexe "M".
+
+se:Marco_Arop a se:Athlete ;
+    rdfs:label "Marco Arop" ;
+    rdfs:comment "Marco Arop est un athlète canadien spécialisé dans le 800m.";
+    se:name "Marco Arop";
+    se:representsCountry se:Canada;
+    se:birthDate "05/02/1992";
+    se:sexe "M".
+
+se:Jamel_Sedjati a se:Athlete ;
+    rdfs:label "Jamel Sedjati" ;
+    rdfs:comment "Jamel Sedjati est un athlète algérien spécialisé dans le 800m.";
+    se:name "Jamel Sedjati";
+    se:representsCountry se:Algeria;
+    se:birthDate "03/05/1999";
+    se:sexe "M".
+
+se:David_Rudisha a se:Athlete ;
+    rdfs:label "David Rudisha" ;
+    rdfs:comment "David Rudisha est un athlète kényan spécialisé dans le 800m.";
+    se:name "David Rudisha";
+    se:representsCountry se:Kenya;
+    se:birthDate "17/12/1988";
+    se:sexe "M".
+# USA Team basket
+
+se:CURRY_Stephen a se:Athlete ;
+    rdfs:label "Stephen Curry" ;
+    rdfs:comment "Stephen Curry est un joueur de basket américain, capitaine de l'équipe, jouant au poste de deuxième arrière." ;
+    se:name "Stephen Curry" ;
+    se:representsCountry se:United_States ;
+    se:sexe "M".
+
+se:EDWARDS_Anthony a se:Athlete ;
+    rdfs:label "Anthony Edwards" ;
+    rdfs:comment "Anthony Edwards est un joueur de basket américain, jouant au poste d'arrière." ;
+    se:name "Anthony Edwards" ;
+    se:representsCountry se:United_States ;
+    se:sexe "M".
+
+se:JAMES_LeBron a se:Athlete ;
+    rdfs:label "LeBron James" ;
+    rdfs:comment "LeBron James est un joueur de basket américain, jouant au poste d'arrière." ;
+    se:name "LeBron James" ;
+    se:representsCountry se:United_States ;
+    se:sexe "M".
+
+se:DURANT_Kevin a se:Athlete ;
+    rdfs:label "Kevin Durant" ;
+    rdfs:comment "Kevin Durant est un joueur de basket américain, jouant au poste d'arrière." ;
+    se:name "Kevin Durant" ;
+    se:representsCountry se:United_States ;
+    se:sexe "M".
+
+se:WHITE_Derrick a se:Athlete ;
+    rdfs:label "Derrick White" ;
+    rdfs:comment "Derrick White est un joueur de basket américain, jouant au poste d'arrière." ;
+    se:name "Derrick White" ;
+    se:representsCountry se:United_States ;
+    se:sexe "M".
+
+se:HALIBURTON_Tyrese a se:Athlete ;
+    rdfs:label "Tyrese Haliburton" ;
+    rdfs:comment "Tyrese Haliburton est un joueur de basket américain, jouant au poste d'arrière." ;
+    se:name "Tyrese Haliburton" ;
+    se:representsCountry se:United_States ;
+    se:sexe "M".
+
+se:TATUM_Jayson a se:Athlete ;
+    rdfs:label "Jayson Tatum" ;
+    rdfs:comment "Jayson Tatum est un joueur de basket américain, jouant au poste d'ailier." ;
+    se:name "Jayson Tatum" ;
+    se:representsCountry se:United_States ;
+    se:sexe "M".
+
+se:EMBIID_Joel a se:Athlete ;
+    rdfs:label "Joel Embiid" ;
+    rdfs:comment "Joel Embiid est un joueur de basket américain, jouant au poste de pivot." ;
+    se:name "Joel Embiid" ;
+    se:representsCountry se:United_States ;
+    se:sexe "M".
+
+se:HOLIDAY_Jrue a se:Athlete ;
+    rdfs:label "Jrue Holiday" ;
+    rdfs:comment "Jrue Holiday est un joueur de basket américain, jouant au poste d'arrière." ;
+    se:name "Jrue Holiday" ;
+    se:representsCountry se:United_States ;
+    se:sexe "M".
+
+
+
+
+
+se:ADEBAYO_Bam a se:Athlete ;
+    rdfs:label "Bam Adebayo" ;
+    rdfs:comment "Bam Adebayo est un joueur de basket américain, jouant au poste de pivot." ;
+    se:name "Bam Adebayo" ;
+    se:representsCountry se:United_States ;
+    se:sexe "M".
+
+se:DAVIS_Anthony a se:Athlete ;
+    rdfs:label "Anthony Davis" ;
+    rdfs:comment "Anthony Davis est un joueur de basket américain, jouant au poste de pivot." ;
+    se:name "Anthony Davis" ;
+    se:representsCountry se:United_States ;
+    se:sexe "M".
+
+se:BOOKER_Devin a se:Athlete ;
+    rdfs:label "Devin Booker" ;
+    rdfs:comment "Devin Booker est un joueur de basket américain, jouant au poste d'arrière." ;
+    se:name "Devin Booker" ;
+    se:representsCountry se:United_States ;
+    se:sexe "M".
+
+
+# Sweden Team beach volley
+
+se:AHMAN_David a se:Athlete ;
+    rdfs:label "David Ahman" ;
+    rdfs:comment "David Ahman est un joueur de beach volley suédois." ;
+    se:name "David Ahman" ;
+    se:representsCountry se:Sweden ;
+    se:birthDate "21/02/1992" ;
+    se:sexe "M".
+
+se:HELLVIG_Jonatan a se:Athlete ;
+    rdfs:label "Jonatan Hellvig" ;
+    rdfs:comment "Jonatan Hellvig est un joueur de beach volley suédois." ;
+    se:name "Jonatan Hellvig" ;
+    se:representsCountry se:Sweden ;
+    se:birthDate "15/07/1995" ;
+    se:sexe "M".
+
+
+# Germany Team beach volley
+
+se:EHLERS_Nils a se:Athlete ;
+    rdfs:label "Nils Ehlers" ;
+    rdfs:comment "Nils Ehlers est un joueur de beach volley allemand." ;
+    se:name "Nils Ehlers" ;
+    se:representsCountry se:Germany ;
+    se:birthDate "25/06/1998" ;
+    se:sexe "M".
+
+se:WICKLER_Clemens a se:Athlete ;
+    rdfs:label "Clemens Wickler" ;
+    rdfs:comment "Clemens Wickler est un joueur de beach volley allemand." ;
+    se:name "Clemens Wickler" ;
+    se:representsCountry se:Germany ;
+    se:birthDate "05/05/1994" ;
+    se:sexe "M".
+
+#Teams
+se:basketball_Team_USA_final a se:Team ;
+    rdfs:label "Team USA" ;
+    rdfs:comment "Team USA is the national team of the United States." ;
+    se:representsCountry se:United_States ;
+    se:results se:Result_CURRY_Stephen_Basketball_Final, se:Result_EDWARDS_Anthony_Basketball_Final, se:Result_JAMES_LeBron_Basketball_Final, se:Result_DURANT_Kevin_Basketball_Final, se:Result_WHITE_Derrick_Basketball_Final, se:Result_HALIBURTON_Tyrese_Basketball_Final, se:Result_TATUM_Jayson_Basketball_Final, se:Result_EMBIID_Joel_Basketball_Final, se:Result_HOLIDAY_Jrue_Basketball_Final, se:Result_ADEBAYO_Bam_Basketball_Final, se:Result_DAVIS_Anthony_Basketball_Final, se:Result_BOOKER_Devin_Basketball_Final.
+
+se:basketball_Team_France_final a se:Team ;
+    rdfs:label "Team France" ;
+    rdfs:comment "Team France is the national team of France." ;
+    se:representsCountry se:France ;
+    se:results se:Result_NTILIKINA_Frank_Basketball_Final, se:Result_BATUM_Nicolas_Basketball_Final, se:Result_ALBICY_Andrew_Basketball_Final, se:Result_YABUSELE_Guerschon_Basketball_Final, se:Result_CORDINIER_Isaia_Basketball_Final, se:Result_FOURNIER_Evan_Basketball_Final, se:Result_de_COLO_Nando_Basketball_Final, se:Result_LESSORT_Mathias_Basketball_Final, se:Result_GOBERT_Rudy_Basketball_Final, se:Result_WEMBANYAMA_Victor_Basketball_Final, se:Result_STRAZEL_Matthew_Basketball_Final, se:Result_COULIBALY_Bilal_Basketball_Final.
+
+se:beach_volley_Team_Sweden_final a se:Team ;
+    rdfs:label "Team Sweden" ;
+    rdfs:comment "Team Sweden is the national team of Sweden." ;
+    se:representsCountry se:Sweden ;
+    se:results se:Result_AHMAN_David_Beach_Volley_Final, se:Result_HELLVIG_Jonatan_Beach_Volley_Final.
+
+se:beach_volley_Team_Germany_final a se:Team ;
+    rdfs:label "Team Germany" ;
+    rdfs:comment "Team Germany is the national team of Germany." ;
+    se:representsCountry se:Germany ;
+    se:results se:Result_EHLERS_Nils_Beach_Volley_Final, se:Result_WICKLER_Clemens_Beach_Volley_Final.
+
+# Results
+
+se:Result_Zhanle_Pan_100m_Nage_Libre_Final a se:Result ;
+    rdfs:label "Performance de Zhanle Pan en 100m nage libre" ;
+    se:value 47.48; 
+    se:unit unit:Second;
+    se:athleteOfResult se:Zhanle_Pan .
+
+se:Result_Kyle_Chalmers_100m_Nage_Libre_Final a se:Result ;
+    rdfs:label "Performance de Kyle Chalmers en 100m nage libre" ;
+    se:value 46.40;
+    se:unit unit:Second;
+    se:athleteOfResult se:Kyle_Chalmers .
+
+se:Result_David_Popovici_100m_Nage_Libre_Final a se:Result ;
+    rdfs:label "Performance de David Popovici en 100m nage libre" ;
+    se:value 47.49 ;
+    se:unit unit:Second;
+    se:athleteOfResult se:David_Popovici .
+
+
+se:Result_KITAGUCHI_Haruka_Javelot_Final a se:Result ;
+    rdfs:label "Performance de KITAGUCHI Haruka en javelot" ;
+    se:value 65.80 ; 
+    se:unit unit:Meter;
+    se:athleteOfResult se:KITAGUCHI_Haruka .
+
+se:Result_van_DYK_Jo_Ane_Javelot_Final a se:Result ;
+    rdfs:label "Performance de van DYK Jo-Ane en javelot" ;
+    se:value 63.93 ; 
+    se:unit unit:Meter;
+    se:athleteOfResult se:van_DYK_Jo_Ane .
+
+se:Result_seRODNIKOVA_Nikola_Javelot_Final a se:Result ;
+    rdfs:label "Performance de seRODNIKOVA Nikola en javelot" ;
+    se:value 63.68 ; 
+    se:unit unit:Meter;
+    se:athleteOfResult se:seRODNIKOVA_Nikola .
+
+se:Result_Quan_Hongchan_plongeon_10m_final a se:Result ;
+    rdfs:label "Performance de Quan Hongchan en plongeon" ;
+    se:value 425.60 ; 
+    se:unit unit:Point;
+    se:athleteOfResult se:Quan_Hongchan .
+
+se:Result_Chen_Yuxi_plongeon_10m_final a se:Result ;
+    rdfs:label "Performance de Chen Yuxi en plongeon" ;
+    se:value 420.70 ;
+    se:unit unit:Point;
+    se:athleteOfResult se:Chen_Yuxi .
+
+se:Result_Kim_Mi_Rae_plongeon_10m_final a se:Result ;
+    rdfs:label "Performance de Kim Mi Rae en plongeon" ;
+    se:value 372.10 ; 
+    se:unit unit:Point;
+    se:athleteOfResult se:Kim_Mi_Rae .
+
+se:Result_Fahnbulleh_Joseph_200m_1er_Tour a se:Result ;
+    rdfs:label "Performance de Joseph Fahnbulleh en 200m" ;
+    se:value 20.20 ; 
+    se:unit unit:Second;
+    se:athleteOfResult se:Fahnbulleh_Joseph .
+
+se:Result_Desalu_Eseosa_Fostine_200m_1er_Tour a se:Result ;
+    rdfs:label "Performance de Desalu Eseosa Fostine en 200m" ;
+    se:value 20.26 ; 
+    se:unit unit:Second;
+    se:athleteOfResult se:Desalu_Eseosa_Fostine .
+
+se:Result_van_Niekerk_Wayde_200m_1er_Tour a se:Result ;
+    rdfs:label "Performance de Wayde van Niekerk en 200m" ;
+    se:value 20.42 ;
+    se:unit unit:Second; 
+    se:athleteOfResult se:van_Niekerk_Wayde .
+
+se:Result_Zeze_Ryan_200m_1er_Tour a se:Result ;
+    rdfs:label "Performance de Ryan Zeze en 200m" ;
+    se:value 20.49 ; 
+    se:unit unit:Second;
+    se:athleteOfResult se:Zeze_Ryan .
+
+
+se:Result_Svensson_Felix_200m_1er_Tour a se:Result ;
+    rdfs:label "Performance de Felix Svensson en 200m" ;
+    se:value 20.54 ; 
+    se:unit unit:Second;
+    se:athleteOfResult se:Svensson_Felix .
+
+se:Result_Traore_Cheickna_200m_1er_Tour a se:Result ;
+    rdfs:label "Performance de Cheickna Traore en 200m" ;
+    se:value 20.54 ; 
+    se:unit unit:Second;
+    se:athleteOfResult se:Traore_Cheickna .
+
+se:Result_Law_Calab_200m_1er_Tour a se:Result ;
+    rdfs:label "Performance de Calab Law en 200m" ;
+    se:value 20.75 ; 
+    se:unit unit:Second;
+    se:athleteOfResult se:Law_Calab .
+
+se:Result_Komanski_Albert_200m_1er_Tour a se:Result ;
+    rdfs:label "Performance de Albert Komanski en 200m" ;
+    se:value 20.77 ; 
+    se:unit unit:Second;
+    se:athleteOfResult se:Komanski_Albert .
+
+se:Result_Wanyonyi_Emmanuel_800m_Final a se:Result ;
+    rdfs:label "Performance de Emmanuel Wanyonyi en 800m" ;
+    se:value 101.19 ;
+    se:unit unit:Second;
+    se:athleteOfResult se:Emmanuel_Wanyonyi .
+
+se:Result_Arop_Marco_800m_Final a se:Result ;
+    rdfs:label "Performance de Marco Arop en 800m" ;
+    se:value 101.20 ; 
+    se:unit unit:Second;
+    se:athleteOfResult se:Marco_Arop .
+
+se:Result_Sedjati_Jamel_800m_Final a se:Result ;
+    rdfs:label "Performance de Jamel Sedjati en 800m" ;
+    se:value 101.50 ; 
+    se:unit unit:Second;
+    se:athleteOfResult se:Jamel_Sedjati .
+
+se:Result_CURRY_Stephen_Basketball_Final a se:Result ;
+    rdfs:label "Performance de Stephen Curry en basketball" ;
+    se:value 24 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:CURRY_Stephen .
+
+se:Result_EDWARDS_Anthony_Basketball_Final a se:Result ;
+    rdfs:label "Performance d'Anthony Edwards en basketball" ;
+    se:value 8 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:EDWARDS_Anthony .
+
+se:Result_JAMES_LeBron_Basketball_Final a se:Result ;
+    rdfs:label "Performance de LeBron James en basketball" ;
+    se:value 14 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:JAMES_LeBron .
+
+se:Result_DURANT_Kevin_Basketball_Final a se:Result ;
+    rdfs:label "Performance de Kevin Durant en basketball" ;
+    se:value 15 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:DURANT_Kevin .
+
+se:Result_WHITE_Derrick_Basketball_Final a se:Result ;
+    rdfs:label "Performance de Derrick White en basketball" ;
+    se:value 0 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:WHITE_Derrick .
+
+se:Result_HALIBURTON_Tyrese_Basketball_Final a se:Result ;
+    rdfs:label "Performance de Tyrese Haliburton en basketball" ;
+    se:value 0 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:HALIBURTON_Tyrese .
+
+se:Result_TATUM_Jayson_Basketball_Final a se:Result ;
+    rdfs:label "Performance de Jayson Tatum en basketball" ;
+    se:value 2 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:TATUM_Jayson .
+
+se:Result_EMBIID_Joel_Basketball_Final a se:Result ;
+    rdfs:label "Performance de Joel Embiid en basketball" ;
+    se:value 4 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:EMBIID_Joel .
+
+se:Result_HOLIDAY_Jrue_Basketball_Final a se:Result ;
+    rdfs:label "Performance de Jrue Holiday en basketball" ;
+    se:value 6 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:HOLIDAY_Jrue .
+
+se:Result_ADEBAYO_Bam_Basketball_Final a se:Result ;
+    rdfs:label "Performance de Bam Adebayo en basketball" ;
+    se:value 2 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:ADEBAYO_Bam .
+
+se:Result_DAVIS_Anthony_Basketball_Final a se:Result ;
+    rdfs:label "Performance d'Anthony Davis en basketball" ;
+    se:value 8 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:DAVIS_Anthony .
+
+se:Result_BOOKER_Devin_Basketball_Final a se:Result ;
+    rdfs:label "Performance de Devin Booker en basketball" ;
+    se:value 15 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:BOOKER_Devin .
+
+
+se:Result_NTILIKINA_Frank_Basketball_Final a se:Result ;
+    rdfs:label "Performance de Frank Ntilikina en basketball" ;
+    se:value 0 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:NTILIKINA_Frank .
+
+se:Result_BATUM_Nicolas_Basketball_Final a se:Result ;
+    rdfs:label "Performance de Nicolas Batum en basketball" ;
+    se:value 5 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:BATUM_Nicolas .
+
+se:Result_ALBICY_Andrew_Basketball_Final a se:Result ;
+    rdfs:label "Performance d'Andrew Albicy en basketball" ;
+    se:value 0 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:ALBICY_Andrew .
+
+se:Result_YABUSELE_Guerschon_Basketball_Final a se:Result ;
+    rdfs:label "Performance de Guerschon Yabusele en basketball" ;
+    se:value 20 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:YABUSELE_Guerschon .
+
+se:Result_CORDINIER_Isaia_Basketball_Final a se:Result ;
+    rdfs:label "Performance d'Isaia Cordinier en basketball" ;
+    se:value 0 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:CORDINIER_Isaia .
+
+se:Result_FOURNIER_Evan_Basketball_Final a se:Result ;
+    rdfs:label "Performance d'Evan Fournier en basketball" ;
+    se:value 8 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:FOURNIER_Evan .
+
+se:Result_de_COLO_Nando_Basketball_Final a se:Result ;
+    rdfs:label "Performance de Nando de Colo en basketball" ;
+    se:value 12 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:de_COLO_Nando .
+
+se:Result_LESSORT_Mathias_Basketball_Final a se:Result ;
+    rdfs:label "Performance de Mathias Lessort en basketball" ;
+    se:value 5 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:LESSORT_Mathias .
+
+se:Result_GOBERT_Rudy_Basketball_Final a se:Result ;
+    rdfs:label "Performance de Rudy Gobert en basketball" ;
+    se:value 2 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:GOBERT_Rudy .
+
+se:Result_WEMBANYAMA_Victor_Basketball_Final a se:Result ;
+    rdfs:label "Performance de Victor Wembanyama en basketball" ;
+    se:value 26 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:WEMBANYAMA_Victor .
+
+se:Result_STRAZEL_Matthew_Basketball_Final a se:Result ;
+    rdfs:label "Performance de Matthew Strazel en basketball" ;
+    se:value 3 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:STRAZEL_Matthew .
+
+se:Result_COULIBALY_Bilal_Basketball_Final a se:Result ;
+    rdfs:label "Performance de Bilal Coulibaly en basketball" ;
+    se:value 6 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:COULIBALY_Bilal .
+
+se:Result_AHMAN_David_Beach_Volley_Final a se:Result ;
+    rdfs:label "Performance de David Ahman en beach volley" ;
+    se:value 32 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:AHMAN_David .
+
+se:Result_HELLVIG_Jonatan_Beach_Volley_Final a se:Result ;
+    rdfs:label "Performance de Jonatan Hellvig en beach volley" ;
+    se:value 10 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:HELLVIG_Jonatan .
+
+se:Result_EHLERS_Nils_Beach_Volley_Final a se:Result ;
+    rdfs:label "Performance de Nils Ehlers en beach volley" ;
+    se:value 8 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:EHLERS_Nils .
+
+se:Result_WICKLER_Clemens_Beach_Volley_Final a se:Result ; 
+    rdfs:label "Performance de Clemens Wickler en beach volley" ;
+    se:value 15 ;
+    se:unit unit:Point ;
+    se:athleteOfResult se:WICKLER_Clemens .
+
+# World Records
+
+
+se:Record_100m_nage_libre a se:WorldRecord ;
+    rdfs:label "Record_100m_nage_libre" ;
+    se:recordHolder se:Zhanle_Pan ;
+    se:worldRecordValue 46.40 ;
+    se:unit unit:Second;
+    se:recordDate "31/07/2024".
+
+se:Record_Lancer_de_javelot a se:WorldRecord ;
+    rdfs:label "Record_Lancer_de_javelot" ;
+    se:recordHolder se:KITAGUCHI_Haruka ;
+    se:worldRecordValue 66.30 ;
+    se:unit unit:Meter;
+    se:recordDate "31/07/2024".
+
+se:Record_Plongeon_10m a se:WorldRecord ;
+    rdfs:label "Record_Plongeon_10m" ;
+    se:recordHolder se:Quan_Hongchan ;
+    se:worldRecordValue 478.60 ;
+    se:unit unit:Point;
+    se:recordDate "31/07/2012".
+
+se:Record_200m a se:WorldRecord ;
+    rdfs:label "Record_200m" ;
+    se:recordHolder se:Usain_Bolt ;
+    se:worldRecordValue 19.19 ;
+    se:unit unit:Second;
+    se:recordDate "20/08/2009".
+
+se:Record_800m a se:WorldRecord ;
+    rdfs:label "Record_800m" ;
+    se:recordHolder se:David_Rudisha ;
+    se:worldRecordValue 100.91 ;
+    se:unit unit:Second;
+    se:recordDate "09/08/2012".
+
+# Epreuves
+
+
+se:100m_Nage_Libre a se:Epreuve ;
+    se:epreuveName "100m nage libre" ;
+    rdfs:comment "Le 100m nage libre est une épreuve de natation qui consiste à nager sur une distance de 100 mètres." ;
+    se:venue se:Defense_Arena ;
+    se:worldRecord se:Record_100m_nage_libre ;
+    se:dateEvent "31/07/2024" ;
+    se:ticketAvailable false;
+    se:competitionStage "Final" ;
+    se:results se:Result_Zhanle_Pan_100m_Nage_Libre_Final, se:Result_Kyle_Chalmers_100m_Nage_Libre_Final, se:Result_David_Popovici_100m_Nage_Libre_Final .
+
+se:Lancer_de_javelot a se:Epreuve ;
+    se:epreuveName "Lancer de javelot" ;
+    rdfs:comment "Le lancer de javelot est une épreuve d'athlétisme qui consiste à lancer un javelot le plus loin possible." ;
+    se:venue se:Stade_de_France ;
+    se:worldRecord se:Record_Lancer_de_javelot ;
+    se:dateEvent "23/07/2024" ;
+    se:ticketAvailable false;
+    se:competitionStage "Final" ;
+    se:results se:Result_KITAGUCHI_Haruka_Javelot_Final, se:Result_van_DYK_Jo_Ane_Javelot_Final, se:Result_seRODNIKOVA_Nikola_Javelot_Final .
+
+se:Plongeon_10m a se:Epreuve ;
+    se:epreuveName "Plongeon 10m" ;
+    rdfs:comment "Le plongeon 10m est une épreuve de plongeon qui consiste à sauter d'un plongeoir de 10 mètres de hauteur." ;
+    se:venue se:Centre_aquatique_olympique ;
+    se:worldRecord se:Record_Plongeon_10m ;
+    se:dateEvent "13/07/2024" ;
+    se:ticketAvailable false;
+    se:competitionStage "Final" ;
+    se:results se:Result_Quan_Hongchan_plongeon_10m_final, se:Result_Chen_Yuxi_plongeon_10m_final, se:Result_Kim_Mi_Rae_plongeon_10m_final .
+
+se:Basketball a se:Epreuve ;
+    se:epreuveName "Basketball" ;
+    rdfs:comment "Le basketball est un sport collectif qui se joue avec un ballon et un panier." ;
+    se:venue se:Stage_Pierre_Mauroy ;
+    se:dateEvent "15/07/2024" ;
+    se:ticketAvailable false;
+    se:competitionStage "Final" ;
+    se:team se:basketball_Team_USA_final, se:basketball_Team_France_final.
+
+se:200m a se:Epreuve ;
+    se:epreuveName "200m" ;
+    rdfs:comment "Le 200m est une épreuve d'athlétisme qui consiste à courir sur une distance de 200 mètres." ;
+    se:venue se:Stade_de_France ;
+    se:worldRecord se:Record_200m ;
+    se:dateEvent "05/08/2024" ;
+    se:ticketAvailable false;
+    se:competitionStage "1er Tour" ;
+    se:results se:Result_Fahnbulleh_Joseph_200m_1er_Tour, se:Result_Desalu_Eseosa_Fostine_200m_1er_Tour, se:Result_van_Niekerk_Wayde_200m_1er_Tour, se:Result_Zeze_Ryan_200m_1er_Tour, se:Result_Svensson_Felix_200m_1er_Tour, se:Result_Traore_Cheickna_200m_1er_Tour, se:Result_Law_Calab_200m_1er_Tour, se:Result_Komanski_Albert_200m_1er_Tour .
+
+se:800m a se:Epreuve ;
+    se:epreuveName "800m" ;
+    rdfs:comment "Le 800m est une épreuve d'athlétisme qui consiste à courir sur une distance de 800 mètres." ;
+    se:venue se:Stade_de_France ;
+    se:worldRecord se:Record_800m ;
+    se:dateEvent "10/08/2024" ;
+    se:ticketAvailable false;
+    se:competitionStage "Final" ;
+    se:results se:Result_Wanyonyi_Emmanuel_800m_Final, se:Result_Arop_Marco_800m_Final, se:Result_Sedjati_Jamel_800m_Final .
+
+se:Beach_Volley a se:Epreuve ;
+    se:epreuveName "Beach Volley" ;
+    rdfs:comment "Le beach volley est un sport collectif qui se joue sur une plage avec un ballon et un filet." ;
+    se:venue se:Tour_Eiffel ;
+    se:dateEvent "10/08/2024" ;
+    se:ticketAvailable false;
+    se:competitionStage "Final" ;
+    se:team se:beach_volley_Team_Sweden_final, se:beach_volley_Team_Germany_final.
+
+# Podiums
+
+se:Podium_100m_Nage_Libre a se:Podium ;
+    rdfs:label "Podium 100m nage libre" ;
+    se:goldMedal se:Kyle_Chalmers ;
+    se:silverMedal se:Zhanle_Pan ;
+    se:bronzeMedal se:David_Popovici .
+
+se:Podium_Lancer_de_javelot a se:Podium ;
+    rdfs:label "Podium Lancer de javelot" ;
+    se:goldMedal se:KITAGUCHI_Haruka ;
+    se:silverMedal se:van_DYK_Jo_Ane ;
+    se:bronzeMedal se:seRODNIKOVA_Nikola .
+
+
+
+se:Podium_Basketball a se:Podium ;
+    rdfs:label "Podium Basketball" ;
+    se:goldMedal se:basketball_Team_USA_final ;
+    se:silverMedal se:basketball_Team_France_final .
+
+se:Podium_Beach_Volley a se:Podium ;
+    rdfs:label "Podium Beach Volley" ;
+    se:goldMedal se:beach_volley_Team_Sweden_final ;
+    se:silverMedal se:beach_volley_Team_Germany_final .
+
+se:Podium_800m a se:Podium ;
+    rdfs:label "Podium 800m" ;
+    se:goldMedal se:Emmanuel_Wanyonyi ;
+    se:silverMedal se:Marco_Arop ;
+    se:bronzeMedal se:Jamel_Sedjati .

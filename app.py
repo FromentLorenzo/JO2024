@@ -58,10 +58,10 @@ for sport_row in sports_results:
     athletes_data[sport_label] = athletes_list
 
 # Print the resulting dictionary
-print("athletes_data = {")
-for sport, athletes in athletes_data.items():
-    print(f'    "{sport}": {athletes},')
-print("}")
+#print("athletes_data = {")
+#for sport, athletes in athletes_data.items():
+#    print(f'    "{sport}": {athletes},')
+#print("}")
 
 st.set_page_config(layout="wide")
 
