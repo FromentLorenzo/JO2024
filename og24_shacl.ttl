@@ -1,0 +1,31 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix se: <http://example.org/olympics2024/schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+se:EpreuveShape
+    a sh:NodeShape ;
+    sh:targetClass se:Epreuve ;
+    sh:property [
+        sh:path se:venue ;
+        sh:message "Chaque épreuve doit avoir un lieu associé." ;
+        sh:class se:Venue ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+    ] .
+
+
+se:WorldRecordShape
+    a sh:NodeShape ;
+    sh:targetClass se:WorldRecord ;
+    sh:property [
+        sh:path se:worldRecordValue ;
+        sh:message "Chaque record du monde doit avoir une valeur numérique." ;
+        sh:datatype xsd:float ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path se:unit ;
+        sh:message "Chaque record du monde doit avoir une unité de mesure." ;
+        sh:class unit:Unit ;
+        sh:minCount 1 ;
+    ] .
