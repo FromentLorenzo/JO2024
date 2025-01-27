@@ -1,6 +1,5 @@
 import streamlit as st
 from rdflib import Graph, Namespace
-from urllib.parse import quote
 
 # Namespaces
 SE = Namespace("http://example.org/olympics2024/schema#")
@@ -116,22 +115,31 @@ for sport_row in sports_results:
 st.set_page_config(layout="wide")
 st.markdown("<h1 style='text-align: center;'>Sports and Athletes</h1>", unsafe_allow_html=True)
 
+# Placeholder function triggered when an athlete's name is clicked
+from urllib.parse import quote
+
 def on_athlete_click(row):
-    # Extract athlete name
+    # Récupérer le nom de l'athlète et encoder pour l'URL
     name = str(row['athleteName'])
     encoded_name = quote(name)
-    
-    # Guardian query with the dynamic "name" directly integrated
+
+    # Construire l'URL dynamique
+    debug_url = f"http://localhost/service/Guardian/newsPaper?about={encoded_name}"
+    st.write(f"Generated Guardian URL: {debug_url}")  # Affiche dans Streamlit
+    print(f"Generated Guardian URL: {debug_url}")  # Affiche dans la console
+
+    # Construire la requête SPARQL fédérée
     guardian_query = f"""
     PREFIX vocab: <http://example.org/vocab/>
     PREFIX schema: <http://schema.org/>
-    
-    SELECT ?title ?url WHERE {{
-      # Dynamic URL for Guardian API
-      BIND(IRI(CONCAT("http://localhost/service/Guardian/newsPaper?about={encoded_name}")) AS ?Guardian_Url)
-      
-      SERVICE ?Guardian_Url {{
-        SELECT ?s ?p ?o WHERE {{
+
+    SELECT DISTINCT ?title ?url WHERE {{
+    # Construire l'URL dynamique
+    BIND(IRI(CONCAT("http://localhost/service/Guardian/newsPaper?about={encoded_name}")) AS ?Guardian_Url)
+
+    # Fédérer la requête via l'URL dynamique
+    SERVICE ?Guardian_Url {{
+       SELECT ?s ?p ?o WHERE {{
           ?s ?p ?o
         }}
       }}
@@ -140,36 +148,38 @@ def on_athlete_click(row):
       BIND(IF(?p = schema:webTitle, ?o, "") AS ?title)
       BIND(IF(?p = schema:webUrl, ?o, "") AS ?url)
     }}
+    
     """
-    print(guardian_query)
-    
-    # Display athlete details
-    st.write(f"Country: {str(row['countryLabel'])}")
-    st.write(f"Event: {str(row['eventLabel'])}")
-    st.write(f"Medal: {str(row['medalLabel'])}")
-    
-    # Load graph and execute query
+
+    # Charger un graphe RDF temporaire pour exécuter la requête
     g = Graph()
+
     try:
+        # Exécuter la requête SPARQL fédérée
         results = g.query(guardian_query)
-        print(len(results))
+
+        # Traiter les résultats
         articles = []
-        
         for result in results:
-            title = result.get("title")
-            url = result.get("url")
-            if title and url:
-                articles.append((title, url))
-        
-        # Display articles
+            title = str(result['title']).strip()
+            url = str(result['url']).strip()
+            articles.append((title, url))
+
+        # Afficher les résultats
+        st.write(f"Country: {str(row['countryLabel'])}")
+        st.write(f"Event: {str(row['eventLabel'])}")
+        st.write(f"Medal: {str(row['medalLabel'])}")
+
         if articles:
             st.write("Related Articles:")
             for title, url in articles:
-                st.markdown(f"- [{title}]({url})")
+                st.markdown(f"- [{title}]({url})")  # Affiche correctement le titre avec l'URL
         else:
             st.write("No related articles found.")
     except Exception as e:
         st.write(f"Error querying Guardian: {e}")
+
+
 
 # Function to display athletes based on the selected sport
 def display_athletes(sport):
