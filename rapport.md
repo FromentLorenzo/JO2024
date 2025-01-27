@@ -33,6 +33,7 @@ Pour les données textuelles non structurées, nous avons récupéré un fichier
 ## Enrichissement du graphe de connaissances
 
 Les données structurées étaient des données provenant d'un fichier csv regroupant toutes les médailles remportées durant ces Jeux avec le nom de l'athlète/équipe, le pays et l'épreuve. Nous avons effectué une transformation csv2rdf et utilisé l'API du journal The Guardian afin de proposer des articles à propos de l'athlète, mais aussi nous avons essayé d'utilisé l'API SPARQL de DBpedia pour récupérer la date de naissance, la taille et le poids des athlètes.
+(Nous avons eu du mal à faire fonctionner nos requêtes fédérés directement dans notre application, cependant elles fonctionnent parfaitement sur corese/yasgui. Nous avons donc choisi d'afficher l'url de la requête dans notre application pour que l'utilisateur puisse la copier et la coller dans Yasgui pour obtenir les résultats.)
 
 ## Interface
 
@@ -40,6 +41,7 @@ Pour représenter nos données, nous avons utilisé la bibliothèque Python Stre
 
 ![s08104001272025](https://a.okmd.dev/md/67973171cd223.png)
 En sélectionnant un sport, l’utilisateur peut voir tous les médaillés de ce sport.
-![s08122701272025](https://a.okmd.dev/md/679731dc05451.png)
+![s09404901272025](https://a.okmd.dev/md/679746919b161.png)
+
 Puis découvrir quelle épreuve et quelle médaille l'athlète a remporté ainsi que le pays qu'il représente.
-![s08142501272025](https://a.okmd.dev/md/67973251b80da.png)
+![s09422001272025](https://a.okmd.dev/md/679746ec4d9ad.png)
