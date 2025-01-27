@@ -22,7 +22,13 @@ etc ...
 
 ### Construction des graphes de connaissances
 
-Pour les données textuelles non structurées, nous avons récupéré un fichier PDF sur le site des Jeux Olympiques de Paris 2024 contenant la liste des lieux et des épreuves associées. Après extraction du texte, nous avons utilisé le modèle REBEL pour générer des triplets RDF à partir des relations présentes dans le document, comme (Aquatics Centre, located in, Saint-Denis). Ces triplets ont ensuite été intégrés dans notre graphe.
+Pour les données textuelles non structurées, nous avons récupéré un fichier PDF sur le site des Jeux Olympiques de Paris 2024 contenant la liste des lieux et des épreuves associées.
+![s08170501272025](https://a.okmd.dev/md/679732f250078.png)
+ Après extraction du texte, nous avons utilisé le modèle REBEL pour générer des triplets RDF à partir des relations présentes dans le document, exemple:
+![s08214301272025](https://a.okmd.dev/md/67973407ca2c6.png)
+ 
+ Ces triplets ont ensuite été intégrés dans notre graphe.
+
 
 ## Enrichissement du graphe de connaissances
 
@@ -30,4 +36,10 @@ Les données structurées étaient des données provenant d'un fichier csv regro
 
 ## Interface
 
-Pour représenter nos données, nous avons utilisé la bibliothèque Python Streamlit, qui nous permet de créer une interface simple et intuitive. Cette interface affiche dans un premier temps une liste de tous les sports sous forme de menu déroulant. En sélectionnant un sport, l’utilisateur peut explorer les épreuves associées, puis découvrir les athlètes médaillés pour chaque épreuve.
+Pour représenter nos données, nous avons utilisé la bibliothèque Python Streamlit, qui nous permet de créer une interface simple et intuitive. Cette interface affiche dans un premier temps une liste de tous les sports sous forme de menu déroulant.
+
+![s08104001272025](https://a.okmd.dev/md/67973171cd223.png)
+En sélectionnant un sport, l’utilisateur peut voir tous les médaillés de ce sport.
+![s08122701272025](https://a.okmd.dev/md/679731dc05451.png)
+Puis découvrir quelle épreuve et quelle médaille l'athlète a remporté ainsi que le pays qu'il représente.
+![s08142501272025](https://a.okmd.dev/md/67973251b80da.png)
