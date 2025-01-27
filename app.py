@@ -1,5 +1,6 @@
 import streamlit as st
 from rdflib import Graph, Namespace
+from urllib.parse import quote
 
 # Namespaces
 SE = Namespace("http://example.org/olympics2024/schema#")
@@ -89,12 +90,60 @@ for sport_row in sports_results:
 st.set_page_config(layout="wide")
 st.markdown("<h1 style='text-align: center;'>Sports and Athletes</h1>", unsafe_allow_html=True)
 
-# Placeholder function triggered when an athlete's name is clicked
 def on_athlete_click(row):
-    # QUERY THE GUARDIAN
-    st.write(f"Country: {str(row['countryLabel'])}") 
-    st.write(f"Event: {str(row['eventLabel'])}") 
-    st.write(f"Medal: {str(row['medalLabel'])}") 
+    # Extract athlete name
+    name = str(row['athleteName'])
+    encoded_name = quote(name)
+    
+    # Guardian query with the dynamic "name" directly integrated
+    guardian_query = f"""
+    PREFIX vocab: <http://example.org/vocab/>
+    PREFIX schema: <http://schema.org/>
+    
+    SELECT ?title ?url WHERE {{
+      # Dynamic URL for Guardian API
+      BIND(IRI(CONCAT("http://localhost/service/Guardian/newsPaper?about={encoded_name}")) AS ?Guardian_Url)
+      
+      SERVICE ?Guardian_Url {{
+        SELECT ?s ?p ?o WHERE {{
+          ?s ?p ?o
+        }}
+      }}
+      
+      # Extract titles and URLs
+      BIND(IF(?p = schema:webTitle, ?o, "") AS ?title)
+      BIND(IF(?p = schema:webUrl, ?o, "") AS ?url)
+    }}
+    """
+    print(guardian_query)
+    
+    # Display athlete details
+    st.write(f"Country: {str(row['countryLabel'])}")
+    st.write(f"Event: {str(row['eventLabel'])}")
+    st.write(f"Medal: {str(row['medalLabel'])}")
+    
+    # Load graph and execute query
+    g = Graph()
+    try:
+        results = g.query(guardian_query)
+        print(len(results))
+        articles = []
+        
+        for result in results:
+            title = result.get("title")
+            url = result.get("url")
+            if title and url:
+                articles.append((title, url))
+        
+        # Display articles
+        if articles:
+            st.write("Related Articles:")
+            for title, url in articles:
+                st.markdown(f"- [{title}]({url})")
+        else:
+            st.write("No related articles found.")
+    except Exception as e:
+        st.write(f"Error querying Guardian: {e}")
 
 # Function to display athletes based on the selected sport
 def display_athletes(sport):
