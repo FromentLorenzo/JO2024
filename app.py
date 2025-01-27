@@ -37,6 +37,32 @@ WHERE {
 # Execute the query to get all sports
 sports_results = combined_graph.query(sports_query)
 
+
+venues_query = """
+PREFIX se: <http://example.org/olympics2024/schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?sportLabel ?venueLabel
+WHERE {
+    # Link sport to venue
+    ?sport se:venue ?venue .
+    ?sport skos:prefLabel ?sportLabel .
+    ?venue rdfs:label ?venueLabel .
+}
+"""
+
+# Execute the query to get venues for each sport
+venues_results = combined_graph.query(venues_query)
+
+# Dictionary to store venues for each sport
+venues_data = {}
+for row in venues_results:
+    sport_label = str(row['sportLabel'])
+    venue_label = str(row['venueLabel'])
+    venues_data[sport_label] = venue_label
+
+
 # Dictionary to store athletes data for each sport
 athletes_data = {}
 
@@ -147,6 +173,9 @@ def on_athlete_click(row):
 
 # Function to display athletes based on the selected sport
 def display_athletes(sport):
+    venue = venues_data.get(sport, "Venue not available")
+    st.write(f"**Venue:** {venue}")
+
     athletes = athletes_data.get(sport, [])
     if athletes:
         for index, athlete in enumerate(athletes):  # Use index to ensure unique keys
